@@ -1,0 +1,1240 @@
+@import "./variables.scss";
+@import "./font.scss";
+
+$theme-colors: ("primary": $color-primary,
+  "secondary": $color-secondary,
+  "danger": $color-danger,
+  "success": $color-success,
+  "warning": $color-warning,
+  "info": $color-info,
+  "light": $color-light,
+  "dark": $color-dark,
+);
+
+html,
+body {
+  padding    : 0;
+  margin     : 0;
+  font-family: Poppins !important;
+  color      : $color-black;
+}
+
+a {
+  color          : inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import "~bootstrap/scss/bootstrap";
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+
+.floating-label {
+  color: $color-secondary;
+}
+
+.header-footer {
+  position: relative;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left    : 50%;
+  bottom  : 0 !important;
+}
+
+.icon-scroll {
+  width        : 40px;
+  height       : 60px;
+  margin-left  : -20px;
+  top          : 50%;
+  margin-top   : -35px;
+  box-shadow   : inset 0 0 0 2px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content                  : '';
+  width                    : 8px;
+  height                   : 8px;
+  background               : #fff;
+  margin-left              : -4px;
+  top                      : 8px;
+  border-radius            : 4px;
+  animation-duration       : 1.5s;
+  animation-iteration-count: infinite;
+  animation-name           : scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity  : 0;
+    transform: translateY(46px);
+  }
+}
+
+.h2 {
+  font-style : normal !important;
+  font-family: Poppins !important;
+  font-weight: 400 !important;
+  font-size  : 16px !important;
+  line-height: 24px !important;
+  /* identical to box height */
+
+  text-align    : center;
+  text-transform: uppercase;
+
+  /* Top Menu */
+
+  color: $color-secondary;
+}
+
+.h1 {
+  font-style : normal !important;
+  font-family: Poppins !important;
+  font-weight: 700 !important;
+  font-size  : 28px !important;
+  line-height: 60px;
+  /* identical to box height */
+
+  text-align    : center;
+  text-transform: capitalize;
+
+  /* Black Text */
+
+  color: $color-black;
+}
+
+.p {
+  font-style    : normal !important;
+  font-weight   : 400 !important;
+  font-size     : 15px !important;
+  line-height   : 30px !important;
+  /* or 167% */
+  text-align    : center;
+  text-transform: capitalize;
+  /* Top Menu */
+  color         : $color-secondary;
+}
+
+.h3 {
+  font-style    : normal !important;
+  margin-top    : 4rem !important;
+  font-weight   : 400 !important;
+  font-size     : 16px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  /* identical to box height */
+  text-align    : center;
+  text-transform: uppercase !important;
+
+  /* Top Menu */
+  color: $color-secondary;
+}
+
+
+.header-nav-link {
+  font-style   : normal;
+  font-weight  : 500 !important;
+  font-size    : 16px !important;
+  line-height  : 24px !important;
+  color        : $color-light !important;
+  border-bottom: 2px solid $color-light !important;
+  margin-right : 20px;
+}
+
+.header-nav-link-active {
+  font-style   : normal;
+  font-weight  : 500 !important;
+  font-size    : 16px !important;
+  line-height  : 24px !important;
+  color        : $color-light !important;
+  border-bottom: 2px solid $color-primary !important;
+  margin-right : 20px;
+}
+
+.header-nav-link-contact {
+  background-color: $color-black;
+  border-radius   : 4px;
+  color           : $color-light !important;
+  padding-right   : 15px;
+  padding-left    : 15px;
+  font-style      : normal;
+  font-weight     : 500 !important;
+  font-size       : 16px !important;
+  line-height     : 24px !important;
+}
+
+
+.header-nav-link-contact-1 {
+  background-color: $color-primary;
+  border-radius   : 4px;
+  color           : $color-light !important;
+  padding-right   : 15px;
+  padding-left    : 15px;
+  font-style      : normal;
+  font-weight     : 500 !important;
+  font-size       : 16px !important;
+  line-height     : 24px !important;
+}
+
+.header-navbar {
+  background-color: transparent;
+  padding-top     : 15px;
+  padding-bottom  : 15px;
+}
+
+
+.header-navbar-1 {
+  background-color: $color-black;
+  padding-top     : 15px;
+  padding-bottom  : 15px;
+}
+
+.header-card {
+  border-radius: 0px !important;
+  border       : none;
+}
+
+.header-card-1 {
+  position     : absolute;
+  top          : 25%;
+  right        : 0;
+  bottom       : 20px !important;
+  left         : 0;
+  padding      : 1rem;
+  border-radius: 0px !important;
+}
+
+.header-card-content {
+  padding-bottom: 11rem;
+}
+
+.header-card-header {
+  font-style    : normal;
+  font-weight   : 400 !important;
+  font-size     : 60px;
+  line-height   : 60px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color         : #FFFFFF;
+}
+
+.header-footer {
+  text-align      : center !important;
+  background-color: transparent !important;
+  border-top      : 0px !important;
+}
+
+.header-card-text {
+  text-align: end;
+  color     : $color-light;
+}
+
+.header-span {
+  font-style  : normal;
+  font-weight : 400 !important;
+  font-size   : 16px !important;
+  line-height : 32px;
+  margin-right: 10px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.technologies-card {
+  border-radius   : 0px !important;
+  border          : none;
+  background-color: $color-solid;
+}
+
+.technologies-card-h2 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 16px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  /* identical to box height */
+  text-align    : center;
+  text-transform: uppercase !important;
+
+  /* Top Menu */
+  color: $color-secondary;
+}
+
+.technologies-hr {
+  border-bottom: 2px solid $color-primary;
+  width        : 280px;
+}
+
+
+.services-card {
+  border-radius: 0px !important;
+  border       : none;
+  width        : '100%'
+}
+
+.services-card-h2 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 16px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  /* identical to box height */
+  text-align    : center;
+  text-transform: uppercase !important;
+
+  /* Top Menu */
+  color: $color-secondary;
+}
+
+.services-hr {
+  border-bottom: 2px solid $color-info !important;
+  width        : 125px;
+}
+
+.services-card {
+  padding: 1rem !important;
+}
+
+.services-card-title {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 700;
+  font-size  : 18px;
+  line-height: 30px;
+  margin-top : 1rem;
+  /* identical to box height */
+
+  text-align    : center;
+  text-transform: capitalize;
+
+  color: $color-black;
+
+}
+
+.services-card-text {
+  font-style    : normal;
+  font-weight   : 400;
+  font-size     : 14px;
+  line-height   : 24px;
+  text-align    : center;
+  text-transform: capitalize;
+  color         : #000000;
+}
+
+.services-swiper-container {
+  height: 500px;
+}
+
+
+.technology-card {
+  border-radius: 0px !important;
+  border       : none;
+}
+
+.technology-text {
+  font-family   : 'Poppins' !important;
+  font-style    : normal !important;
+  font-weight   : 300 !important;
+  font-size     : 16px !important;
+  /* identical to box height */
+  text-align    : center !important;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.technology-card-body {
+  width: 125px !important;
+}
+
+.technology-body {
+  justify-content: center !important;
+}
+
+.technology-card-h2 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 16px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  /* identical to box height */
+  text-align    : center;
+  text-transform: uppercase !important;
+
+  /* Top Menu */
+  color: $color-secondary;
+}
+
+.technology-hr {
+  border-bottom: 2px solid $color-primary;
+  width        : 280px;
+}
+
+.technology-tab {
+  border-bottom: 2px solid $color-primary !important;
+  color        : $color-black !important;
+  cursor       : pointer !important;
+  font-weight  : 550 !important;
+  font-size    : 16px !important;
+}
+
+.technology-tab-1 {
+  color      : $color-black;
+  cursor     : pointer !important;
+  font-weight: 550 !important;
+  font-size  : 16px !important;
+}
+
+.nav-tabs {
+  border-top-left-radius: 0rem !important;
+  border-top            : 0rem !important;
+  border-right          : 0rem !important;
+  border-left           : 0rem !important;
+}
+
+.technology-image {
+  background-color: #F9F9F9 !important;
+  width           : 100%;
+  height          : 90px;
+  align-items     : center;
+  border-radius   : 12px;
+  align-items     : center;
+  justify-content : center;
+  display         : flex;
+  position        : relative;
+}
+
+.testimonial-card-h2 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 16px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  /* identical to box height */
+  text-align    : center;
+  text-transform: uppercase !important;
+
+  /* Top Menu */
+  color: $color-secondary;
+}
+
+.testimonial-hr {
+  border-bottom: 2px solid $color-info;
+  width        : 110px;
+}
+
+
+.testimonial-card {
+  border-radius: 0px !important;
+  border       : none;
+  width        : '100%';
+}
+
+.testimonial-card-h2 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 16px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  /* identical to box height */
+  text-align    : center;
+  text-transform: uppercase !important;
+
+  /* Top Menu */
+  color: $color-secondary;
+}
+
+.testimonial-hr {
+  border-bottom: 2px solid $color-primary;
+  width        : 125px;
+}
+
+.testimonial-card {
+  padding: 1rem !important;
+}
+
+.testimonial-card-title {
+  font-style   : normal;
+  font-weight  : 700;
+  font-size    : 18px;
+  line-height  : 0px;
+  margin-bottom: 20px;
+  margin-top   : 1rem;
+  /* identical to box height */
+
+  text-align    : left;
+  text-transform: capitalize;
+
+  color: $color-black;
+
+}
+
+.testimonial-card-text {
+  font-style    : normal;
+  font-weight   : 400;
+  font-size     : 14px;
+  line-height   : 24px;
+  text-align    : left;
+  text-transform: capitalize;
+  color         : $color-secondary;
+}
+
+.testimonial-swiper-container {
+  height: 280px;
+}
+
+.testimonial-card-img {
+  width : 50px;
+  height: 50px;
+}
+
+.testimonial-card-img-1 {
+  width : 15px;
+  height: 15px;
+}
+
+.testimonial-card-1 {
+  border          : none;
+  background-color: $color-solid;
+  border-radius   : 16px;
+}
+
+.testimonial-footer {
+  border-top      : 0rem !important;
+  background-color: transparent !important;
+}
+
+
+.testimonial-card-title-1 {
+  font-style    : normal;
+  font-weight   : 700;
+  font-size     : 18px;
+  line-height   : 0px;
+  margin-bottom : 20px !important;
+  margin-top    : 0rem;
+  /* identical to box height */
+  text-align    : left;
+  text-transform: capitalize;
+
+  color: $color-black;
+
+}
+
+
+.testimonial-card-subtitle {
+  font-style    : normal;
+  font-weight   : 400;
+  font-size     : 15px !important;
+  line-height   : 0px !important;
+  /* or 167% */
+  text-align    : center;
+  text-transform: capitalize;
+  /* Top Menu */
+  color         : $color-secondary;
+}
+
+
+.contact-card {
+  border-radius: 0px !important;
+  border       : none;
+}
+
+.contact-card-h2 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 14px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  /* identical to box height */
+  text-align    : left;
+  text-transform: uppercase !important;
+
+  /* Top Menu */
+  color: $color-secondary;
+}
+
+.contact-hr {
+  border-bottom: 2px solid $color-primary;
+  width        : 220px;
+  text-align   : left;
+}
+
+.contact-h1 {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 700 !important;
+  font-size  : 40px !important;
+  line-height: 35px;
+  /* identical to box height */
+
+  text-align    : left;
+  text-transform: capitalize;
+
+  /* Black Text */
+
+  color: $color-black !important;
+}
+
+.contact-comp-h1 {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 700 !important;
+  font-size  : 40px !important;
+  line-height: 35px;
+  /* identical to box height */
+
+  text-align    : left;
+  text-transform: capitalize;
+
+  /* Black Text */
+
+  color: $color-black !important;
+}
+
+.footer-card {
+  border-radius   : 0px !important;
+  border          : none;
+  padding         : 1rem;
+  background-color: $color-black;
+  margin-top      : 4rem;
+
+}
+
+.footer-nav-link {
+  font-style   : normal;
+  font-weight  : 500 !important;
+  font-size    : 16px !important;
+  line-height  : 24px !important;
+  color        : $color-light !important;
+  border-bottom: 2px solid $color-secondary !important;
+  margin-right : 20px;
+}
+
+.footer-codetown {
+  display    : flex;
+  align-items: center;
+}
+
+.footer-span {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 400;
+  font-size  : 14px;
+  /* identical to box height */
+  text-align : center;
+  /* Top Menu */
+
+  color: $color-secondary;
+}
+
+.footer-detail {
+  font-weight: 400;
+  font-size  : 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-transform: lowercase;
+  text-align    : end !important;
+  /* Top Menu */
+
+  color: $color-secondary;
+}
+
+.footer-contacts-1 {
+  margin-right: 20px;
+}
+
+
+.process-card {
+  border-radius   : 0px !important;
+  border          : none;
+  background-color: $color-solid;
+  margin-top      : 4rem;
+  padding-bottom  : 4rem;
+}
+
+.process-card-h2 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 16px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  /* identical to box height */
+  text-align    : center;
+  text-transform: uppercase !important;
+
+  /* Top Menu */
+  color: $color-secondary;
+}
+
+.process-hr {
+  border-bottom: 2px solid $color-primary;
+  width        : 140px;
+}
+
+.process-card-1 {
+  border-radius   : 0px !important;
+  border          : none;
+  background-color: $color-solid;
+}
+
+.process-image {
+  width : 45px;
+  height: 45px;
+}
+
+
+.process-img {
+  width          : 74px;
+  height         : 74px;
+  align-items    : center;
+  border-radius  : 12px;
+  align-items    : center;
+  justify-content: center;
+  display        : flex;
+  position       : relative;
+}
+
+
+.process-card-title {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 700;
+  font-size  : 18px;
+  line-height: 30px;
+  margin-top : 1rem;
+  /* identical to box height */
+  text-align : left;
+  color      : $color-black;
+
+}
+
+.process-card-text {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 400;
+  font-size  : 14px;
+  line-height: 24px;
+  text-align : left;
+  color      : $color-secondary;
+}
+
+.process-border-hr {
+  border-bottom: 2px dashed #000000;
+  width        : 160px;
+  margin-left  : 10px;
+}
+
+.process-border {
+  align-items    : center;
+  justify-content: left;
+  display        : flex;
+  position       : relative;
+}
+
+.about-card {
+  border-radius: 0px !important;
+  border       : none;
+}
+
+.about-background-color {
+  background-color: $color-solid;
+  padding-top     : 2rem;
+  padding-bottom  : 2rem;
+  margin-top      : 4rem !important;
+}
+
+.about-h3 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 16px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  /* identical to box height */
+  text-align    : left;
+  /* Top Menu */
+  color         : $color-secondary;
+
+}
+
+.about-h1 {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 700 !important;
+  font-size  : 28px !important;
+  /* identical to box height */
+
+  text-align    : left;
+  text-transform: capitalize;
+
+  /* Black Text */
+
+  color: $color-black;
+}
+
+.about-p {
+  font-style    : normal;
+  font-weight   : 400;
+  font-size     : 14px !important;
+  /* or 167% */
+  text-align    : left;
+  text-transform: capitalize;
+  /* Top Menu */
+  color         : $color-secondary;
+}
+
+.about-p-1 {
+  font-style    : normal;
+  font-weight   : 400;
+  font-size     : 16px !important;
+  /* or 167% */
+  text-align    : left;
+  text-transform: capitalize;
+  /* Top Menu */
+  color         : $color-black;
+}
+
+.card-image {
+  margin-top: 1rem;
+}
+
+.about-section {
+  margin-top: 1rem;
+}
+
+.about-listgroup {
+  border          : none;
+  background-color: transparent;
+}
+
+.about-listgroup-item {
+  border          : none !important;
+  padding-left    : 0 !important;
+  background-color: transparent;
+}
+
+.about-dot {
+  width     : 10px !important;
+  height    : 10px !important;
+  text-align: left;
+}
+
+.about-top {
+  margin-top: 15px;
+}
+
+
+.about-card-1 {
+  border-radius   : 0px !important;
+  border          : none;
+  margin-left     : 50px;
+  background-color: transparent;
+}
+
+.about-head {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 700;
+  font-size  : 18px;
+  /* or 120% */
+
+  text-transform: capitalize;
+
+  /* Black Text */
+
+  color: $color-black;
+}
+
+.about-p-2 {
+  font-style    : normal;
+  font-weight   : 400;
+  font-size     : 14px !important;
+  /* or 167% */
+  text-align    : left;
+  text-transform: capitalize;
+  margin-bottom : 0px;
+  margin-top    : 1rem !important;
+  /* Top Menu */
+  color         : $color-secondary;
+}
+
+.about-image {
+  width: 60px !important;
+}
+
+
+.about-h3-1 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 16px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  margin-top    : 0.8rem !important;
+  margin-bottom : 0.8rem !important;
+  /* identical to box height */
+  text-align    : center;
+  /* Top Menu */
+  color         : $color-secondary;
+
+}
+
+.about-h1-1 {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 700 !important;
+  font-size  : 28px !important;
+  margin-top : 4rem;
+  /* identical to box height */
+
+  text-align    : center;
+  text-transform: capitalize;
+
+  /* Black Text */
+
+  color: $color-black;
+}
+
+.about-cardgroup {
+  margin-top: 2rem !important;
+}
+
+.about-core-card {
+  border-radius: 0px !important;
+  border       : 0px !important;
+}
+
+.about-core-image {
+  width          : 100% !important;
+  height         : 100% !important;
+  background-size: cover !important;
+}
+
+.about-core-imageoverlay {
+  border-radius   : 0px !important;
+  top             : 0;
+  right           : 0;
+  bottom          : 0;
+  left            : 0;
+  padding         : 1rem;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+}
+
+.about-core-h1 {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 600 !important;
+  font-size  : 18px !important;
+  /* identical to box height */
+
+  text-align    : left;
+  text-transform: capitalize;
+
+  /* Black Text */
+
+  color: $color-light;
+}
+
+.about-core-h3 {
+  font-style    : normal;
+  margin-top    : 4rem;
+  font-weight   : 400 !important;
+  font-size     : 18px !important;
+  line-height   : 3px !important;
+  padding-bottom: 0rem;
+  margin-top    : 0.8rem !important;
+  margin-bottom : 1.8rem !important;
+  /* identical to box height */
+  text-align    : left;
+  /* Top Menu */
+  color         : $color-light;
+}
+
+.about-core-background {
+  position: relative;
+}
+
+.about-core-overlay {
+  position: absolute;
+  bottom  : 0 !important;
+}
+
+.about-hr {
+  border-bottom: 2px solid $color-info;
+  width        : 90px;
+}
+
+.about-contact-h1 {
+  font-style    : normal;
+  font-weight   : 700 !important;
+  font-size     : 28px !important;
+  /* identical to box height */
+  margin-top    : 1rem;
+  text-align    : left;
+  text-transform: capitalize;
+
+  /* Black Text */
+
+  color: $color-black;
+}
+
+.about-contact-text {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 400;
+  font-size  : 16px;
+  /* identical to box height, or 167% */
+
+
+  /* Black Text */
+
+  color: $color-black;
+}
+
+.about-contact-text-1 {
+  font-style   : normal;
+  font-weight  : 400;
+  font-size    : 14px;
+  /* identical to box height, or 167% */
+  margin-bottom: 0;
+  margin-top   : 2rem;
+
+  /* Black Text */
+
+  color: $color-black;
+}
+
+.about-contact-text-2 {
+  font-style : normal;
+  font-family: Poppins !important;
+  font-weight: 400;
+  font-size  : 16px;
+  margin-top : 0;
+  /* identical to box height, or 167% */
+
+
+  /* Black Text */
+
+  color: $color-primary;
+}
+
+.about-contact-btn {
+  color  : $color-light;
+  padding: 0.8rem;
+}
+
+.about-contact-btn:hover {
+  color: $color-light !important;
+}
+
+.about-contact-btn:active {
+  color: color-light !important;
+}
+
+.contact-background-color {
+  background-color: $color-solid;
+  padding         : 2rem;
+  margin-top      : 4rem !important;
+}
+
+.contact-container {
+  margin-top: 4rem !important;
+  border    : 0px !important;
+}
+
+.contact-h1 {
+  font-style : normal !important;
+  font-family: Poppins !important;
+  font-weight: 700 !important;
+  font-size  : 20px !important;
+  line-height: 60px;
+  /* identical to box height */
+
+  text-align    : center;
+  text-transform: capitalize;
+
+  /* Black Text */
+
+  color: $color-black;
+}
+
+.contact-body {
+  justify-content: center !important;
+  text-align     : center !important;
+}
+
+
+.contact-card-title {
+  font-style   : normal;
+  font-weight  : 700;
+  font-size    : 18px;
+  line-height  : 0px;
+  margin-bottom: 20px;
+  margin-top   : 1rem;
+  /* identical to box height */
+
+  text-align    : left;
+  text-transform: capitalize;
+
+  color: $color-black;
+
+}
+
+.contact-card-text {
+  font-style    : normal;
+  font-weight   : 400;
+  font-size     : 14px;
+  line-height   : 24px;
+  text-align    : left;
+  text-transform: capitalize;
+  color         : $color-secondary;
+}
+
+.contact-swiper-container {
+  height    : 280px;
+  margin-top: 2rem !important;
+}
+
+.contact-card-img {
+  width : 50px;
+  height: 50px;
+}
+
+.contact-card-img-1 {
+  width : 15px;
+  height: 15px;
+}
+
+.contact-card-1 {
+  border          : none;
+  background-color: $color-solid;
+  border-radius   : 16px;
+}
+
+.contact-footer {
+  border-top      : 0rem !important;
+  background-color: transparent !important;
+}
+
+
+.contact-card-title-1 {
+  font-style    : normal;
+  font-weight   : 700;
+  font-size     : 18px;
+  line-height   : 0px;
+  margin-bottom : 20px !important;
+  margin-top    : 0rem;
+  /* identical to box height */
+  text-align    : left;
+  text-transform: capitalize;
+
+  color: $color-black;
+
+}
+
+
+.contact-card-subtitle {
+  font-style    : normal;
+  font-weight   : 400;
+  font-size     : 15px !important;
+  line-height   : 0px !important;
+  /* or 167% */
+  text-align    : center;
+  text-transform: capitalize;
+  /* Top Menu */
+  color         : $color-secondary;
+}
+
+.contact-card-subtext {
+  font-style    : normal;
+  font-style    : normal;
+  font-weight   : 400 !important;
+  font-size     : 14px !important;
+  /* identical to box height, or 171% */
+  text-transform: capitalize;
+  color         : #000000;
+  margin-bottom : 7px !important;
+}
+
+.contact-card-subtext-1 {
+  font-style    : normal;
+  font-style    : normal;
+  font-weight   : 400 !important;
+  margin-bottom : 7px !important;
+  font-size     : 14px !important;
+  /* identical to box height, or 171% */
+  text-transform: capitalize;
+  color         : #000000;
+  text-align    : end;
+}
+
+.contact-card-sub {
+  border       : 0px !important;
+  border-bottom: 1px solid #E3E3E3 !important;
+  border-radius: 0px !important;
+}
+
+.contact-recaptcha {
+  font-style    : normal;
+  font-weight   : 400 !important;
+  font-size     : 14px !important;
+  /* or 171% */
+  text-transform: capitalize;
+  margin-top    : 8px !important;
+  /* Body text */
+
+  color: $color-secondary !important;
+}
+
+.contact-recaptcha-text {
+  color: $color-primary !important;
+}
+
+.contact-form-label {
+  font-style : normal !important;
+  font-weight: 400 !important;
+  font-size  : 14px !important;
+  /* identical to box height */
+  color      : #000000;
+}
+
+.contact-position {
+  position: relative !important;
+}
+
+.contact-position-form {
+  position: absolute !important;
+  top     : 20% !important;
+  width   : 550px !important;
+}
+
+.contact-header-image {
+  background-repeat: no-repeat !important;
+  background-size  : cover !important;
+}
+
+.form-select-1 {
+  color: $color-secondary !important;
+}
