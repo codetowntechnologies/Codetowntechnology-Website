@@ -41,7 +41,7 @@ const Services = () => {
             },
             1280: {
               slidesPerView: 4,
-              spaceBetween: 15
+              spaceBetween: 0
             }
           }}
           className="services-swiper-container"
@@ -50,7 +50,7 @@ const Services = () => {
             return (
               <SwiperSlide key={`services${index}`}>
                 <Card className='services-card' style={{ backgroundColor: service.color }}>
-                  <Card.Body>
+                  <Card.Body className='service-card-bodys'>
                     <Card.Img width={100} height={220} className='services-card-img' src={service.img} />
                     <Card.Title className='services-card-title'>
                       {service.title}

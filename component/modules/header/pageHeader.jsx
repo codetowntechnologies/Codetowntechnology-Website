@@ -3,7 +3,7 @@ import { Parallax } from 'react-parallax';
 import styles from '../../../styles/header/Breadcrumb.module.scss';
 export const PageHeader = ({ title, subtitle, bgImage, classNames }) => {
   return (
-    <Parallax className={styles.section} bgImageStyle={{ height: '100%' }} blur={1} bgImage={bgImage} bgImageAlt={title} strength={10} >
+    <Parallax className={styles.section} bgImageStyle={{ height: '100%', width: '100%' }} blur={1} bgImage={bgImage} bgImageAlt={title} strength={10} >
       <Container className={styles.container}>
         <h2>{title}</h2>
         <p>{subtitle}</p>
