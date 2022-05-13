@@ -28,14 +28,14 @@ const Header = () => {
               <Link href="/about" passHref>
                 <Nav.Link className={router.pathname == '/about' ? 'header-nav-link-active' : 'header-nav-link'}>About</Nav.Link>
               </Link>
+              <Link href="portfolio" passHref>
+                <Nav.Link className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolio</Nav.Link>
+              </Link>
               {/* <Link href="#" passHref>
                 <Nav.Link className={router.pathname == '#' ? 'header-nav-link-active' : 'header-nav-link'}>Services</Nav.Link>
               </Link>
               <Link href="#" passHref>
                 <Nav.Link className={router.pathname == '#' ? 'header-nav-link-active' : 'header-nav-link'}>Technology</Nav.Link>
-              </Link>
-              <Link href="#" passHref>
-                <Nav.Link className={router.pathname == '#' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolio</Nav.Link>
               </Link>
               <Link href="#" passHref>
                 <Nav.Link className={router.pathname == '#' ? 'header-nav-link-active' : 'header-nav-link'}>Process</Nav.Link>
@@ -44,7 +44,7 @@ const Header = () => {
                 <Nav.Link className={router.pathname == '#' ? 'header-nav-link-active' : 'header-nav-link'}>Career</Nav.Link>
               </Link> */}
               <Link href="/contact" passHref>
-                <Nav.Link className={router.pathname == '/contact' ? 'header-nav-link-contact-1' : 'header-nav-link-contact'}>Contact Us</Nav.Link>
+                <Nav.Link className={router.pathname == '/contact' ? 'header-nav-link-contact-1' : router.pathname == '/portfolio' ? 'header-nav-link-contact-1' : 'header-nav-link-contact'}>Contact Us</Nav.Link>
               </Link>
             </Nav>
           </Navbar.Collapse>

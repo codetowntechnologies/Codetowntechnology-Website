@@ -25,11 +25,7 @@ const ValidationSchema = Yup.object().shape({
     .max(50, 'Too Long!')
     .required('Last name is required'),
   email: Yup.string().email('Invalid email').required('Email is required'),
-  phone: Yup.string().required('Contact number is required'),
-  company: Yup.string()
-    .min(10, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Company is required')
+  phone: Yup.string().required('Phone number is required'),
 });
 
 const Contact = () => {
@@ -245,24 +241,6 @@ const Contact = () => {
                     })}
                   </Swiper>
                 </div>
-                <Card className='contact-card-sub'>
-                  <Row>
-                    <Col lg={7}>
-                      <Card.Text className='contact-card-subtext'>
-                        All projects secured by NDA & IP is your&apos;s
-                      </Card.Text>
-                    </Col>
-                    <Col lg={5}>
-                      <Card.Text className='contact-card-subtext-1'>
-                        100% Secure. Zero Spam.
-                      </Card.Text>
-                    </Col>
-                  </Row>
-                </Card>
-                <Card.Text className='contact-recaptcha'>
-                  This site is protected by reCAPTCHA and the Google <span className='contact-recaptcha-text'>Privacy Policy</span> and
-                  <span className='contact-recaptcha-text'>Terms of Service</span> apply.
-                </Card.Text>
               </Container>
             </Col>
           </Row>
