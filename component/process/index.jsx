@@ -8,17 +8,17 @@ const Process = () => {
       <Container>
         <div className='process-container'>
           <Card.Text className='h3 mx-auto'>
-                        Simplify process
+            Simplify process
           </Card.Text>
           <div className='mx-auto process-hr' />
           <Card.Title className='h1'>
-                        We Simplify Software Development Process
+            We Simplify Software Development Process
           </Card.Title>
           <Row>
             {ProcessData && ProcessData.map((value, index) => {
               return (
                 <>
-                  <Col key={`process${index}`}>
+                  <Col lg={3} md={6} sm={12} xs={12} key={`process${index}`}>
                     <Card className='process-card-1'>
                       <div className='process-border'>
                         <div className='process-img' style={{ backgroundColor: value.color }}>

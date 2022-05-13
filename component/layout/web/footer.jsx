@@ -42,13 +42,13 @@ const Footer = () => {
         </Nav>
         <div className="mt-5 pb-2">
           <Row>
-            <Col lg={2}>
+            <Col className='responsive' lg={2} md={5} sm={12} xs={12}>
               <Image src='/images/Logo.png' width={140} alt='logo' />
             </Col>
-            <Col lg={5}>
+            <Col className='responsive' lg={5} md={5} sm={12} xs={12}>
               <span className='footer-span'>2022-2023 ©codetowntechnologies - All Rights Reserved</span>
             </Col>
-            <Col lg={5}>
+            <Col className='responsive' lg={5} md={5} sm={12} xs={12}>
               <div className='footer-detail'>
                 {/* <span className='footer-contacts-1'><Image src='/images/footer/mobile.png' /> +91 76270 37613</span> */}
                 <span className='footer-contacts'><Image src='/images/footer/email.png' /> hr@codeTownTechnologies.com</span>
