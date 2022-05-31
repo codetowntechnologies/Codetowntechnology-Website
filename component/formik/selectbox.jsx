@@ -8,7 +8,11 @@ const SelectBox = (props) => {
       <FormGroup className="mb-3">
         {label && <Form.Label className={className}> {label} </Form.Label>}
         <Form.Select className='form-select-1' aria-label="Default select example">
-          <option value="1">{option}</option>
+          {option && option.map((value, index) => {
+            return (
+              <option key={`${index}`} value={value.id}>{value.name}</option>
+            );
+          })}
         </Form.Select>
       </FormGroup>
     </>

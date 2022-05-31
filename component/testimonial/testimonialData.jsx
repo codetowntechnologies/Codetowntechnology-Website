@@ -1,26 +1,34 @@
 export const TestimonialData = [
   {
     id: 1,
-    title: 'Wade Starr',
-    subtitle: 'VP Global Marketing & Ecommerce @ Skyroam',
-    description: 'They have a lot of concern for their customers and the end product. We have good communication and a good relationship between my team and theirs. We’re very happy with them as a partner.',
+    title: 'The Mechanic',
+    subtitle: 'US Client',
+    description: 'Code Town is a tech professional Team that understands the importance of time management, meeting deadlines and customer satisfaction. Gaurav and his team worked efficiently on the project and were very resourceful in going above and beyond for my company. I highly recommend him to all. ',
     image: '/images/testimonial/1.png',
     vector: '/images/testimonial/vector.png',
   },
   {
     id: 2,
-    title: 'Meredith Valentine',
-    subtitle: 'R&D & Innovation Coordinator @ AES Tiete',
-    description: 'Though it was one of Cheesecake Labs’ first projects with an energy company, their team understood our business quickly and applied that knowledge to the product.',
+    title: 'Tushar B',
+    subtitle: 'US Client',
+    description: 'Gaurav is a very accommodating person to work with. He has a seasoned team of coders who are great at implementation. He and his team even went a step ahead to suggest and implement a critical feature that we hadn\'t thought of.',
     image: '/images/testimonial/2.png',
     vector: '/images/testimonial/vector.png',
   },
   {
     id: 3,
-    title: 'Wade Starr',
-    subtitle: 'VP Global Marketing & Ecommerce @ Skyroam',
-    description: 'They have a lot of concern for their customers and the end product. We have good communication and a good relationship between my team and theirs. We’re very happy with them as a partner.',
+    title: 'Kiran K',
+    subtitle: 'US Client',
+    description: 'These guys are very good at what they do, prompt and on-time delivery.',
     image: '/images/testimonial/1.png',
     vector: '/images/testimonial/vector.png',
   },
+  {
+    id: 4,
+    title: 'Emeka A',
+    subtitle: 'South Africa Client',
+    description: 'Thank you for your good services.',
+    image: '/images/testimonial/1.png',
+    vector: '/images/testimonial/vector.png',
+  }
 ];

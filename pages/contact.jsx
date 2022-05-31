@@ -1,7 +1,6 @@
 import React from 'react';
-import { Card, CardGroup, Col, Container, Form, Image, ListGroup, Row, Stack } from 'react-bootstrap';
+import { Card, Col, Container, Form, Image, Row, Stack } from 'react-bootstrap';
 import withWebLayout from '../component/layout/web/withWebLayout';
-import { about } from '../component/data/about';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { SubmitButton } from '../component/button/submit';
@@ -43,6 +42,64 @@ const Contact = () => {
       console.log('values', values);
     },
   });
+
+
+  const ServiceOptions = [
+    {
+      id: 'Web Development',
+      name: 'Web Development',
+    },
+    {
+      id: 'Mobile Development',
+      name: 'Mobile Development',
+    },
+    {
+      id: 'UI/UX Design',
+      name: 'UI/UX Design',
+    },
+    {
+      id: 'Wearables App Development',
+      name: 'Wearables App Development',
+    },
+    {
+      id: 'IoT Solutions',
+      name: 'IoT Solutions',
+    },
+    {
+      id: 'Cloud Solutions',
+      name: 'Cloud Solutions',
+    },
+    {
+      id: 'AI - ML App Development',
+      name: 'AI - ML App Development',
+    },
+    {
+      id: 'Quality Assurance (QA)',
+      name: 'Quality Assurance (QA)',
+    },
+    {
+      id: 'Hire Dedicated Developers',
+      name: 'Hire Dedicated Developers',
+    },
+    {
+      id: 'Virtual Reality Apps Development',
+      name: 'Virtual Reality Apps Development',
+    }
+  ];
+  const StartOption = [
+    {
+      id: 'Immediate',
+      name: 'Immediate',
+    },
+    {
+      id: 'After a week',
+      name: 'After a week',
+    },
+    {
+      id: 'After a month',
+      name: 'After a month',
+    },
+  ];
   return (
     <React.Fragment>
       <Head>
@@ -90,7 +147,7 @@ const Contact = () => {
                       <Col lg={6}>
                         <TextBox
                           className='contact-form-label'
-                          placeholder='Enter Email'
+                          placeholder='Your Email Address'
                           name="email"
                           label="Email"
                           value={formik.values.email}
@@ -101,8 +158,9 @@ const Contact = () => {
                       <Col lg={6}>
                         <TextBox
                           className='contact-form-label'
-                          placeholder='Enter Contact Number'
+                          placeholder='Phone Number'
                           name="phone"
+                          type='number'
                           label="Phone Number"
                           value={formik.values.phone}
                           handleChange={formik.handleChange}
@@ -111,31 +169,17 @@ const Contact = () => {
                       </Col>
                       <Col lg={12}>
                         <SelectBox
-                          option='Select'
+                          option={ServiceOptions}
                           className='contact-form-label'
                           label="Select a Service"
                         />
                       </Col>
-                      <Col lg={6}>
+                      <Col lg={12}>
                         <SelectBox
-                          option='Select'
-                          className='contact-form-label'
-                          label="Budget"
-                        />
-                      </Col>
-                      <Col lg={6}>
-                        <SelectBox
-                          option='Select'
+                          option={StartOption}
                           className='contact-form-label'
                           name="company"
                           label="How soon you want to start?"
-                        />
-                      </Col>
-                      <Col lg={12}>
-                        <SelectBox
-                          option='Select'
-                          className='contact-form-label'
-                          label="Requirment"
                         />
                       </Col>
                       <Col lg={12}>
@@ -148,18 +192,6 @@ const Contact = () => {
                           as="textarea"
                           rows={3}
                           error={formik.touched.description && formik.errors.description}
-                        />
-                      </Col>
-                      <Col lg={12}>
-                        <TextBox
-                          className='contact-form-label'
-                          placeholder='Select or Drop your file here'
-                          name="company"
-                          label="Have a file to share?"
-                          value={formik.values.company}
-                          handleChange={formik.handleChange}
-                          error={formik.touched.company && formik.errors.company}
-                          formtext="Only Document, Image or ZIP file. Max size 8MB"
                         />
                       </Col>
                     </Row>
@@ -176,10 +208,7 @@ const Contact = () => {
               <Container>
                 <Card className='contact-container'>
                   <Card.Body className='contact-body'>
-                    <Card.Text className='contact-h1 mx-auto'>
-                      Trusted by
-                    </Card.Text>
-                    <Image src='/images/contact/clients-1.png' className='contact-logo' fluid />
+                    <Image src='/images/contact/contact.png' className='contact-logo' fluid />
                   </Card.Body>
                 </Card>
                 <div>
@@ -215,15 +244,11 @@ const Contact = () => {
                           <Card className='contact-card-1' style={{ backgroundColor: service.color }}>
                             <Card.Body>
                               <Card.Img className='contact-card-img-1' src={service.vector} />
-                              <Card.Title className='contact-card-title'>
-                                {service.title}
-                              </Card.Title>
                               <Card.Text className='contact-card-text'>
                                 {service.description}
                               </Card.Text>
                               <Card.Footer className='contact-footer'>
                                 <Stack direction='horizontal' gap={2}>
-                                  <Card.Img width={100} height={220} className='contact-card-img' src={service.image} />
                                   <div className='mt-0'>
                                     <Card.Title className='contact-card-title-1'>
                                       {service.title}

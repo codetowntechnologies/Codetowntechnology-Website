@@ -50,15 +50,14 @@ const Testimonials = () => {
                     <Card className='testimonial-card-1' style={{ backgroundColor: service.color }}>
                       <Card.Body>
                         <Card.Img className='testimonial-card-img-1' src={service.vector} />
-                        <Card.Title className='testimonial-card-title'>
+                        {/* <Card.Title className='testimonial-card-title'>
                           {service.title}
-                        </Card.Title>
+                        </Card.Title> */}
                         <Card.Text className='testimonial-card-text'>
                           {service.description}
                         </Card.Text>
                         <Card.Footer className='testimonial-footer'>
-                          <Stack direction='horizontal' gap={2}>
-                            <Card.Img width={100} height={220} className='testimonial-card-img' src={service.image} />
+                          <Stack direction='horizontal' gap={0}>
                             <div className='mt-0'>
                               <Card.Title className='testimonial-card-title-1'>
                                 {service.title}

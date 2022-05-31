@@ -5,7 +5,7 @@ export const PortfolioData = [
     title: 'Moment of Grace',
     subtitle: 'App for iPhones & iPads to send video messages to your contacts.',
     image: '/images/portfolio/1.png',
-    link: 'https://codetown.com',
+    link: '/detail/service',
     technology: 'Android',
     technology_2: 'IOS'
   },
@@ -15,7 +15,7 @@ export const PortfolioData = [
     title: 'Plot Spot',
     subtitle: 'A marketplace platform to trade fresh farm products in Aruba.',
     image: '/images/portfolio/2.png',
-    link: 'https://codetown.com',
+    link: '/detail/service',
     technology: 'Android',
     technology_2: 'IOS'
   },
@@ -25,7 +25,7 @@ export const PortfolioData = [
     title: 'Smeezy',
     subtitle: 'A smart supply chain management solution for hospitals & vendors.',
     image: '/images/portfolio/3.png',
-    link: 'https://codetown.com',
+    link: '/detail/service',
     technology: 'Android',
     technology_2: 'IOS'
   },
@@ -35,7 +35,7 @@ export const PortfolioData = [
     title: 'Moment of Grace',
     subtitle: 'App for iPhones & iPads to send video messages to your contacts.',
     image: '/images/portfolio/4.png',
-    link: 'https://codetown.com',
+    link: '/detail/service',
     technology: 'Android',
     technology_2: 'IOS'
   },
@@ -45,7 +45,7 @@ export const PortfolioData = [
     title: 'Freshmarket Hub',
     subtitle: 'A marketplace platform to trade fresh farm products in Aruba.',
     image: '/images/portfolio/5.png',
-    link: 'https://codetown.com',
+    link: '/detail/service',
     technology: 'Android',
     technology_2: 'IOS'
   },
@@ -55,7 +55,7 @@ export const PortfolioData = [
     title: 'Custom Link Portal',
     subtitle: 'A smart supply chain management solution for hospitals & vendors.',
     image: '/images/portfolio/6.png',
-    link: 'https://codetown.com',
+    link: '/detail/service',
     technology: 'Android',
     technology_2: 'IOS'
   },
@@ -65,7 +65,7 @@ export const PortfolioData = [
     title: 'Moment of Grace',
     subtitle: 'App for iPhones & iPads to send video messages to your contacts.',
     image: '/images/portfolio/7.png',
-    link: 'https://codetown.com',
+    link: '/detail/service',
     technology: 'Android',
     technology_2: 'IOS'
   },
@@ -75,7 +75,7 @@ export const PortfolioData = [
     title: 'Freshmarket Hub',
     subtitle: 'A marketplace platform to trade fresh farm products in Aruba.',
     image: '/images/portfolio/8.png',
-    link: 'https://codetown.com',
+    link: '/detail/service',
     technology: 'Android',
     technology_2: 'IOS'
   },
@@ -85,8 +85,23 @@ export const PortfolioData = [
     title: 'Custom Link Portal',
     subtitle: 'A smart supply chain management solution for hospitals & vendors.',
     image: '/images/portfolio/9.png',
-    link: 'https://codetown.com',
+    link: '/detail/service',
     technology: 'Android',
     technology_2: 'IOS'
   }
 ];
+
+export const PortfolioTabs = [
+  // {
+  //   id: 1,
+  //   name: 'Popular Brands'
+  // },
+  // {
+  //   id: 2,
+  //   name: 'Case Studies'
+  // },
+  {
+    id: 3,
+    name: 'Portfolio'
+  }
+]

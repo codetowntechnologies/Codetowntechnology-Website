@@ -52,6 +52,7 @@ const About = () => {
         title='Specialists that deliver.'
         subtitle='We know the process, and empower a multidisciplinary team to collaborate with you and deliver delightful solutions.'
         bgImage='/images/about/header.png'
+        classNames='about-subtext'
       />
       <Container>
         <Row>
@@ -113,9 +114,10 @@ const About = () => {
       <div className='about-background-color'>
         <Container>
           <Row>
-            <Col lg={4}>
+            <Col lg={4} style={{ position: 'relative' }}>
               <Card className='about-card card-image'>
-                <Image src='/images/about/walk.png' fluid />
+                <Image className='about-position-card-1' src='/images/about/walk.png' fluid />
+                <Image className='about-position-card' src='/images/about/Cover.png' fluid />
               </Card>
             </Col>
             <Col lg={8}>
@@ -224,7 +226,7 @@ const About = () => {
                   Please fill the form or send us an email
                 </Card.Text>
                 <Card.Text className='about-contact-text-2' >
-                  sales@codetown.com
+                  sales@codetowntechnologies.com
                 </Card.Text>
               </div>
             </Col>
@@ -238,7 +240,7 @@ const About = () => {
                         name="first_name"
                         label="First Name*"
                         value={formik.values.first_name}
-                        handleChange={formik.handleChange}
+                        onChange={formik.handleChange}
                         error={formik.touched.first_name && formik.errors.first_name}
                       />
                     </Col>
@@ -248,7 +250,7 @@ const About = () => {
                         name="last_name"
                         label="Last Name*"
                         value={formik.values.last_name}
-                        handleChange={formik.handleChange}
+                        onChange={formik.handleChange}
                         error={formik.touched.last_name && formik.errors.last_name}
                       />
                     </Col>
@@ -258,7 +260,7 @@ const About = () => {
                         name="email"
                         label="Company Email*"
                         value={formik.values.email}
-                        handleChange={formik.handleChange}
+                        onChange={formik.handleChange}
                         error={formik.touched.email && formik.errors.email}
                       />
                     </Col>
@@ -266,9 +268,10 @@ const About = () => {
                       <FloatTextBox
                         placeholder='Enter Contact Number'
                         name="phone"
+                        type='number'
                         label="Contact Number*"
                         value={formik.values.phone}
-                        handleChange={formik.handleChange}
+                        onChange={formik.handleChange}
                         error={formik.touched.phone && formik.errors.phone}
                       />
                     </Col>
@@ -278,7 +281,7 @@ const About = () => {
                         name="company"
                         label="Company*"
                         value={formik.values.company}
-                        handleChange={formik.handleChange}
+                        onChange={formik.handleChange}
                         error={formik.touched.company && formik.errors.company}
                       />
                     </Col>
@@ -288,7 +291,7 @@ const About = () => {
                         name="description"
                         label="Please send a message to get the conversation started"
                         value={formik.values.description}
-                        handleChange={formik.handleChange}
+                        onChange={formik.handleChange}
                         as="textarea"
                         styles={{ height: '100px' }}
                         error={formik.touched.description && formik.errors.description}

@@ -1,37 +1,44 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { Card, Col, Container, Image, Nav, Row } from 'react-bootstrap';
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <Card className='footer-card'>
       <Container>
         <Nav className="ml-auto">
-          <Link href="#" passHref>
+          <Card.Body>
+            <a href='https://www.linkedin.com/company/code-town-technologies/mycompany/?viewAsMember=true' target={'_blank'} rel="noreferrer">
+              <img src='/images/footer/1.png' alt='linkedin' />
+            </a>
+          </Card.Body>
+          {/* <Link href="https://www.linkedin.com/company/code-town-technologies/mycompany/?viewAsMember=true" target='_blank' passHref>
             <Nav.Link>
               <img src='/images/footer/1.png' alt='linkedin' />
             </Nav.Link>
-          </Link>
-          <Link href="#" passHref>
+          </Link> */}
+          {/* <Link href="#" passHref>
             <Nav.Link><img src='/images/footer/2.png' alt='linkedin' /></Nav.Link>
           </Link>
           <Link href="#" passHref>
             <Nav.Link><img src='/images/footer/3.png' alt='linkedin' /></Nav.Link>
-          </Link>         
+          </Link> */}
         </Nav>
 
         <Nav className="ml-auto">
           <Link href="/about" passHref>
-            <Nav.Link className='footer-nav-link'>About</Nav.Link>
+            <Nav.Link className={router.pathname == '/about' ? 'footer-nav-link-active' : 'footer-nav-link'}>About</Nav.Link>
           </Link>
-          {/* <Link href="services" passHref>
-            <Nav.Link className='footer-nav-link'>Services</Nav.Link>
-          </Link>
-          <Link href="/technology" passHref>
-            <Nav.Link className='footer-nav-link'>Technology</Nav.Link>
+          <Link href="/services" passHref>
+            <Nav.Link className={router.pathname == '/services' ? 'footer-nav-link-active' : 'footer-nav-link'}>Services</Nav.Link>
           </Link>
           <Link href="/portfolio" passHref>
-            <Nav.Link className='footer-nav-link'>Portfolio</Nav.Link>
+            <Nav.Link className={router.pathname == '/portfolio' ? 'footer-nav-link-active' : 'footer-nav-link'}>Portfolio</Nav.Link>
+          </Link>
+          {/* <Link href="/technology" passHref>
+            <Nav.Link className='footer-nav-link'>Technology</Nav.Link>
           </Link>
           <Link href="/process" passHref>
             <Nav.Link className='footer-nav-link'>Process</Nav.Link>

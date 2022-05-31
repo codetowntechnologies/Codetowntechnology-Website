@@ -42,7 +42,7 @@ const Technology = () => {
                                   <Col key={`img${index}`} className='mt-4' lg={2} md={3} sm={4} xs={6}>
                                     <Card.Body className='technology-card-body'>
                                       <div className='technology-image'>
-                                        <img className='technology-img' src={img.image} alt={img.id} />
+                                        <img src={img.image} alt={img.id} />
                                       </div>
                                       <Card.Text className='technology-text'>
                                         {img.title}

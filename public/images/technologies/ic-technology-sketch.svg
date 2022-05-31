@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="29px" viewBox="0 0 32 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-technology-sketch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic-technology-sketch" fill="#252B33" fill-rule="nonzero">
+            <polygon id="d" opacity="0.600000024" points="15.9983071 0.000678 6.98436093 0.95513414 6.48356733 10.3392628"></polygon>
+            <polygon id="a" points="6.48390593 10.3392628 15.9986457 28.9942336 0.006095 10.3392628"></polygon>
+            <polygon id="e" opacity="0.600000024" transform="translate(20.755677, 5.169970) scale(-1, 1) translate(-20.755677, -5.169970) " points="25.5130469 0.000678 16.4991007 0.95513414 15.9983071 10.3392628"></polygon>
+            <polygon id="b" transform="translate(23.997630, 19.666748) scale(-1, 1) translate(-23.997630, -19.666748) " points="22.4791656 10.3392628 31.9939054 28.9942336 16.0013547 10.3392628"></polygon>
+            <polygon id="c" opacity="0.800000012" points="6.48356733 10.3392628 25.5130469 10.3392628 15.9983071 28.9942336"></polygon>
+            <polygon id="f" opacity="0.800000012" transform="translate(28.504603, 5.647198) scale(-1, 1) translate(-28.504603, -5.647198) " points="25.0153007 10.3392628 31.9939052 0.95513414 31.4931116 10.3392628"></polygon>
+            <polygon id="g" opacity="0.800000012" points="0.006095 10.3392628 6.98469953 0.95513414 6.48390593 10.3392628"></polygon>
+            <polygon id="h" opacity="0.400000006" points="15.9983071 0.000678 6.48356733 10.3392628 25.5130469 10.3392628"></polygon>
+        </g>
+    </g>
+</svg>

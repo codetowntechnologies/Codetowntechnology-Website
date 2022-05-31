@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, Container } from 'react-bootstrap';
+import { Card, Container, Image } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Pagination, Autoplay } from 'swiper';
+import { FreeMode, Autoplay } from 'swiper';
 import 'swiper/css/autoplay';
 import 'swiper/css/free-mode';
 import { serviceData } from './servicedata';
@@ -21,14 +21,11 @@ const Services = () => {
       </Container>
       <div>
         <Swiper
-          modules={[FreeMode, Pagination, Autoplay]}
+          modules={[FreeMode, Autoplay]}
           freeMode={true}
           autoplay={{
             delay: 1500,
             disableOnInteraction: false
-          }}
-          pagination={{
-            clickable: true,
           }}
           breakpoints={{
             640: {
@@ -37,11 +34,11 @@ const Services = () => {
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 0,
+              spaceBetween: 15,
             },
             1280: {
               slidesPerView: 4,
-              spaceBetween: 0
+              spaceBetween: 15
             }
           }}
           className="services-swiper-container"
@@ -51,7 +48,9 @@ const Services = () => {
               <SwiperSlide key={`services${index}`}>
                 <Card className='services-card' style={{ backgroundColor: service.color }}>
                   <Card.Body className='service-card-bodys'>
-                    <Card.Img width={100} height={220} className='services-card-img' src={service.img} />
+                    <div className='service-comp-img'>
+                      <Image  src={service.img} fluid />
+                    </div>
                     <Card.Title className='services-card-title'>
                       {service.title}
                     </Card.Title>

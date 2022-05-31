@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Container } from 'react-bootstrap';
-import { UilMouseAlt } from '@iconscout/react-unicons';
 import Typewriter from 'typewriter-effect';
 
 const Header = () => {
