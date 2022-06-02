@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Container, Image } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Autoplay } from 'swiper';
+import { FreeMode, Autoplay, Pagination } from 'swiper';
 import 'swiper/css/autoplay';
 import 'swiper/css/free-mode';
 import { serviceData } from './servicedata';
@@ -19,9 +19,9 @@ const Services = () => {
           </Card.Title>
         </div>
       </Container>
-      <div>
+      <div style={{ height: '500px' }}>
         <Swiper
-          modules={[FreeMode, Autoplay]}
+          modules={[FreeMode, Pagination, Autoplay]}
           freeMode={true}
           autoplay={{
             delay: 1500,
@@ -46,11 +46,13 @@ const Services = () => {
           {serviceData && serviceData.map((service, index) => {
             return (
               <SwiperSlide key={`services${index}`}>
-                <Card className='services-card' style={{ backgroundColor: service.color }}>
-                  <Card.Body className='service-card-bodys'>
+                <Card className='services-card-style' style={{ backgroundColor: service.color, height: '100%' }}>
+                  <Card.Body>
                     <div className='service-comp-img'>
-                      <Image  src={service.img} fluid />
+                      <Image src={service.img} fluid />
                     </div>
+                  </Card.Body>
+                  <Card.Body className='service-card-bodys'>
                     <Card.Title className='services-card-title'>
                       {service.title}
                     </Card.Title>

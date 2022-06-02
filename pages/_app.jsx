@@ -7,9 +7,13 @@ config.autoAddCss = false;
 function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout ? Component.Layout : React.Fragment;
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <div>
+      <Layout>
+        <div>
+          <Component {...pageProps} />
+        </div>
+      </Layout>
+    </div>
   );
 }
 export default MyApp;

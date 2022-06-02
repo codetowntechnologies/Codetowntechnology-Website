@@ -67,7 +67,11 @@ const About = () => {
               <Card.Text className='about-p'>
                 We believe that the future is digital. We also believe that using right technology solutions, whether for personal or corporate needs, enhances the progress. Hence, Code Town Technologies offers an optimised suite of software consulting services that enable businesses to develop business strategy, organizational capability, build brands, find customers, win tenders and achieve sustained growth.
               </Card.Text>
-              <ListGroup className='about-listgroup'>
+              <ListGroup style={{ position: 'relative' }} className='about-listgroup'>
+                <div className='responsive-images' style={{ position: 'relative', width: '20px' }}>
+                  <div className='aboutlistgroupitem'>
+                  </div>
+                </div>
                 <ListGroup.Item className='about-listgroup-item' as="li">
                   <Stack direction='horizontal' gap={3}>
                     <Image src='/images/about/about-dot.png' className='about-dot' fluid />
@@ -268,10 +272,13 @@ const About = () => {
                       <FloatTextBox
                         placeholder='Enter Contact Number'
                         name="phone"
-                        type='number'
+                        type='text'
                         label="Contact Number*"
                         value={formik.values.phone}
-                        onChange={formik.handleChange}
+                        onChange={(e) => {
+                          const value = e.target.value.replace(/\D/g, '');
+                          formik.setFieldValue('phone', value);
+                        }}
                         error={formik.touched.phone && formik.errors.phone}
                       />
                     </Col>

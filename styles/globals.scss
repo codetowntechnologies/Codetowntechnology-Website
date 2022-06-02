@@ -34,6 +34,45 @@ a {
 @import 'swiper/scss/pagination';
 
 
+.btn-close {
+  box-sizing: content-box;
+  width     : 1em;
+  height    : 1em;
+  padding   : 17px !important;
+  color     : #000;
+}
+
+.offcanvas {
+  position        : fixed;
+  bottom          : 0;
+  z-index         : 1045;
+  display         : flex;
+  flex-direction  : column;
+  max-width       : 100%;
+  visibility      : hidden;
+  background-color: $color-black;
+  background-clip : padding-box;
+  outline         : 0;
+  transition      : transform 0.3s ease-in-out;
+}
+
+.aboutlistgroupitem {
+  background-image : url('/images/about/Line.png');
+  background-repeat: no-repeat !important;
+  position         : absolute;
+  height           : 190px;
+  left             : 4px;
+  top              : 12px;
+  width            : 30px;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border-color: #fff !important;
+  box-shadow  : none !important;
+  isolation   : isolate;
+}
+
 .floating-label {
   color: $color-secondary !important;
 }
@@ -300,7 +339,17 @@ a {
 .services-card {
   border-radius: 0px !important;
   border       : none;
-  width        : '100%'
+}
+
+.services-card-style {
+  height       : 100% !important;
+  border-radius: 0px !important;
+  border       : none;
+  position     : relative;
+}
+
+.services-swiper-container {
+  height: 450px !important;
 }
 
 .services-card-h2 {
@@ -353,9 +402,7 @@ a {
   color         : #000000;
 }
 
-.services-swiper-container {
-  height: 500px;
-}
+
 
 
 .technology-card {
@@ -913,9 +960,13 @@ a {
 }
 
 .about-dot {
-  width     : 10px !important;
-  height    : 10px !important;
-  text-align: left;
+  width          : 10px !important;
+  height         : 10px !important;
+  text-align     : left;
+  position       : relative;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
 }
 
 .about-top {
@@ -1786,6 +1837,9 @@ li {
 }
 
 @media only screen and (max-width: 640px) {
+  .responsive-images {
+    display: none;
+  }
 
   .portfolio-nav-items {
     justify-content: left;
@@ -2493,9 +2547,16 @@ li {
   }
 
   .service-card-bodys {
-    padding: 8px !important;
+    padding : 5px !important;
+    position: absolute;
+    bottom  : 10px;
+    flex    : 0px !important;
   }
 
+  .service-position-body {
+    position: absolute !important;
+    bottom  : 0px !important;
+  }
 
   .contact-position-form {
     position: relative !important;
@@ -2616,6 +2677,7 @@ li {
     font-style   : normal;
     font-weight  : 500 !important;
     font-size    : 14px !important;
+    width        : 200px;
     line-height  : 24px !important;
     color        : $color-light !important;
     border-bottom: 0px solid $color-light !important;
@@ -2639,7 +2701,7 @@ li {
     padding-right   : 15px;
     padding-left    : 15px;
     padding-left    : 7px !important;
-    width           : 105 !important;
+    width           : 105px !important;
     font-style      : normal;
     font-weight     : 500 !important;
     box-shadow      : rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;

@@ -220,23 +220,8 @@ export const TechnologyData = [
       },
       {
         id: 3,
-        image: '/images/technologies/react.png1',
-        title: 'Gradle',
-      },
-      {
-        id: 4,
         image: '/images/technologies/jenkins.png',
         title: 'Jenkins',
-      },
-      {
-        id: 5,
-        image: '/images/technologies/ionic.png1',
-        title: 'Appium',
-      },
-      {
-        id: 6,
-        image: '/images/technologies/swift.png1',
-        title: 'Selenium',
       }
     ]
   }

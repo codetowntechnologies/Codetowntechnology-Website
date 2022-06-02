@@ -76,20 +76,27 @@ const PortFolio = () => {
                                         {item.subheading}
                                       </Card.Text>
                                       <Card.Title className='portfolio-card-title'>{item.title}</Card.Title>
-                                      <Card.Text className='portfolio-card-subtitle'>
-                                        {item.subtitle}
-                                      </Card.Text>
                                       <Stack direction='horizontal' gap={3}>
-                                        <div>
-                                          <Card.Text className='portfolio-card-technology'>
-                                            {item.technology}
-                                          </Card.Text>
-                                        </div>
-                                        <div>
-                                          <Card.Text className='portfolio-card-technology_2'>
-                                            {item.technology_2}
-                                          </Card.Text>
-                                        </div>
+                                        {item.technology && <div>
+                                          <a style={{ textDecoration: 'none' }} href={item.android_link} target='_blank' rel='noopener noreferrer'>
+                                            <Card.Text className='portfolio-card-technology'>
+                                              {item.technology}
+                                            </Card.Text></a>
+                                        </div>}
+                                        {item.technology_2 && <div>
+                                          <a style={{ textDecoration: 'none' }} href={item.iphone_link} target='_blank' rel='noopener noreferrer'>
+                                            <Card.Text className='portfolio-card-technology_2'>
+                                              {item.technology_2}
+                                            </Card.Text>
+                                          </a>
+                                        </div>}
+                                        {item.technology_3 && <div>
+                                          <a style={{ textDecoration: 'none' }} href={item.web_link} target='_blank' rel='noopener noreferrer'>
+                                            <Card.Text className='portfolio-card-technology_2'>
+                                              {item.technology_3}
+                                            </Card.Text>
+                                          </a>
+                                        </div>}
                                       </Stack>
                                     </Card.Body>
                                   </Card>

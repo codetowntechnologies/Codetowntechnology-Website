@@ -160,10 +160,13 @@ const Contact = () => {
                           className='contact-form-label'
                           placeholder='Phone Number'
                           name="phone"
-                          type='number'
+                          type='text'
                           label="Phone Number"
                           value={formik.values.phone}
-                          handleChange={formik.handleChange}
+                          handleChange={(e) => {
+                            const value = e.target.value.replace(/\D/g, '');
+                            formik.setFieldValue('phone', value);
+                          }}
                           error={formik.touched.phone && formik.errors.phone}
                         />
                       </Col>
