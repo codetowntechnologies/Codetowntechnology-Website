@@ -7,7 +7,7 @@ import { PortfolioData, PortfolioTabs } from '../component/data/portfoliodata';
 import ModelBox from '../component/modules/modal';
 
 const PortFolio = () => {
-  const [key, setKey] = React.useState('3');
+  const [key, setKey] = React.useState(2);
   const [modalShow, setModalShow] = React.useState(false);
 
   const handleSelect = (eventKey) => {
@@ -43,29 +43,23 @@ const PortFolio = () => {
                     })}
                   </Nav>
                 </Col>
-                <Col lg={6} md={6} sm={12} xs={12}>
+                {/* <Col lg={6} md={6} sm={12} xs={12}>
                   <Nav className="portfolio-nav-items" activeKey="/home">
-                    {/* <Nav.Item>
-                      <Nav.Link className='portfolio-nav-text'>Type <Image src='images/portfolio/select-arrow.png' /> </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link className='portfolio-nav-text'>Technology <Image src='images/portfolio/select-arrow.png' /> </Nav.Link>
-                    </Nav.Item> */}
                     <Nav.Item onClick={() => window.location.reload()}>
                       <Nav.Link className='portfolio-nav-refresh'><Image src='images/portfolio/refresh.png' /> </Nav.Link>
                     </Nav.Item>
                   </Nav>
-                </Col>
+                </Col> */}
               </Row>
             </Col>
             <Col md={12}>
               <Tab.Content className='portfolio-technology-tab-content'>
-                {PortfolioTabs && PortfolioTabs.map((tech, index) => {
+                {PortfolioData && PortfolioData.map((tech, index) => {
                   return (
                     <Tab.Pane key={`Tab${index}`} eventKey={tech.id}>
                       <Container>
                         <Row>
-                          {PortfolioData && PortfolioData.map((item, index) => {
+                          {tech.Details && tech.Details.map((item, index) => {
                             return (
                               <>
                                 <Col xxl={3} lg={4} md={6} sm={12} xs={12} key={`portfolio${index}`}>

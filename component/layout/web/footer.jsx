@@ -37,6 +37,12 @@ const Footer = () => {
           <Link href="/portfolio" passHref>
             <Nav.Link className={router.pathname == '/portfolio' ? 'footer-nav-link-active' : 'footer-nav-link'}>Portfolio</Nav.Link>
           </Link>
+          <Link href="/team" passHref>
+            <Nav.Link className={router.pathname == '/team' ? 'footer-nav-link-active' : 'footer-nav-link'}>Our Team</Nav.Link>
+          </Link>
+          <Link href="/github" passHref>
+            <Nav.Link className={router.pathname == '/github' ? 'footer-nav-link-active' : 'footer-nav-link'}>Github</Nav.Link>
+          </Link>
           {/* <Link href="/technology" passHref>
             <Nav.Link className='footer-nav-link'>Technology</Nav.Link>
           </Link>

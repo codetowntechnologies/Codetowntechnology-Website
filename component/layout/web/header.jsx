@@ -46,6 +46,12 @@ const Header = () => {
                   <Link href="portfolio" passHref>
                     <Nav.Link className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolio</Nav.Link>
                   </Link>
+                  <Link href="/team" passHref>
+                    <Nav.Link className={router.pathname == '/team' ? 'header-nav-link-active' : 'header-nav-link'}>Our Team</Nav.Link>
+                  </Link>
+                  <Link href="/github" passHref>
+                    <Nav.Link className={router.pathname == '/github' ? 'header-nav-link-active' : 'header-nav-link'}>Github</Nav.Link>
+                  </Link>
                   <Link href="/contact" passHref>
                     <Nav.Link className={router.pathname == '/contact' ? 'header-nav-link-contact-1' : router.pathname == '/portfolio' ? 'header-nav-link-contact-1' : router.pathname == '/services' ? 'header-nav-link-contact-1' : 'header-nav-link-contact'}>Contact Us</Nav.Link>
                   </Link>
