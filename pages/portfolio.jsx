@@ -23,7 +23,7 @@ const PortFolio = () => {
         <PageHeader
           title='Projects that speak about our versatility'
           subtitle='We’re passionate about what we do! Our portfolio is a sheer presentation about 12+ years of industry experience, collaboration, expertise, and quality deliverables.'
-          bgImage='/images/contact/background.png'
+          bgImage='/images/portfolio/portfolio_banner.png'
           classNames='contact-header-image'
         />
       </div>
@@ -64,7 +64,7 @@ const PortFolio = () => {
                               <>
                                 <Col xxl={3} lg={4} md={6} sm={12} xs={12} key={`portfolio${index}`}>
                                   <Card className='portfolio-card'>
-                                    <Card.Img variant="top" src={item.image} />
+                                    <Card.Img className='portfolio-img' variant="top" src={item.image} />
                                     <Card.Body className='portfolio-card-body'>
                                       <Card.Text className='portfolio-card-subheading'>
                                         {item.subheading}
