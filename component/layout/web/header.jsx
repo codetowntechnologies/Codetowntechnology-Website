@@ -14,6 +14,9 @@ const Header = () => {
       };
     }
   }, [isScrolled]);
+  const [show, setShow] = React.useState(false);
+  const handleClose = () => setShow(false);
+  const handleOpen = () => setShow(true);
   return (
     <>
       <div>
@@ -22,11 +25,13 @@ const Header = () => {
             <Link href="/" passHref>
               <Navbar.Brand><Image src='/images/Logo.png' width={150} alt='logo' /> </Navbar.Brand>
             </Link>
-            <Navbar.Toggle aria-controls='offcanvasNavbar-expand-lg' />
+            <Navbar.Toggle onClick={handleOpen} aria-controls='offcanvasNavbar-expand-lg' />
             <Navbar.Offcanvas
               id='offcanvasNavbar-expand-lg'
               aria-labelledby='offcanvasNavbarLabel-expand-lg'
               placement="end"
+              show={show}
+              onHide={handleClose}
             >
               <Offcanvas.Header closeButton>
                 <Link href="/" passHref>
@@ -38,22 +43,22 @@ const Header = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Link href="/about" passHref>
-                    <Nav.Link className={router.pathname == '/about' ? 'header-nav-link-active' : 'header-nav-link'}>About</Nav.Link>
+                    <Nav.Link onClick={handleClose} className={router.pathname == '/about' ? 'header-nav-link-active' : 'header-nav-link'}>About</Nav.Link>
                   </Link>
                   <Link href="services" passHref>
-                    <Nav.Link className={router.pathname == '/services' ? 'header-nav-link-active' : 'header-nav-link'}>Services</Nav.Link>
+                    <Nav.Link onClick={handleClose} className={router.pathname == '/services' ? 'header-nav-link-active' : 'header-nav-link'}>Services</Nav.Link>
                   </Link>
                   <Link href="portfolio" passHref>
-                    <Nav.Link className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolio</Nav.Link>
+                    <Nav.Link onClick={handleClose} className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolio</Nav.Link>
                   </Link>
                   <Link href="/team" passHref>
-                    <Nav.Link className={router.pathname == '/team' ? 'header-nav-link-active' : 'header-nav-link'}>Our Team</Nav.Link>
+                    <Nav.Link onClick={handleClose} className={router.pathname == '/team' ? 'header-nav-link-active' : 'header-nav-link'}>Our Team</Nav.Link>
                   </Link>
                   <Link href="/github" passHref>
-                    <Nav.Link className={router.pathname == '/github' ? 'header-nav-link-active' : 'header-nav-link'}>Github</Nav.Link>
+                    <Nav.Link onClick={handleClose} className={router.pathname == '/github' ? 'header-nav-link-active' : 'header-nav-link'}>Github</Nav.Link>
                   </Link>
                   <Link href="/contact" passHref>
-                    <Nav.Link className={router.pathname == '/contact' ? 'header-nav-link-contact-1' : router.pathname == '/portfolio' ? 'header-nav-link-contact-1' : router.pathname == '/services' ? 'header-nav-link-contact-1' : 'header-nav-link-contact'}>Contact Us</Nav.Link>
+                    <Nav.Link onClick={handleClose} className={router.pathname == '/contact' ? 'header-nav-link-contact-1' : router.pathname == '/portfolio' ? 'header-nav-link-contact-1' : router.pathname == '/services' ? 'header-nav-link-contact-1' : 'header-nav-link-contact'}>Contact Us</Nav.Link>
                   </Link>
                 </Nav>
               </Offcanvas.Body>
