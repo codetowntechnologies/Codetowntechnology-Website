@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import { Card, Col, Container, Image, ListGroup, Nav, Row, Stack, Tab } from 'react-bootstrap';
+import { Card, Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 import withWebLayout from '../component/layout/web/withWebLayout';
 import { PageHeader } from '../component/modules/header/pageHeader';
 import { GitHubData, GitHubTabs } from '../component/data/githubData';
@@ -51,16 +51,20 @@ const GitHub = () => {
                   return (
                     <Tab.Pane key={`Tab${index}`} eventKey={tech.id}>
                       <Container>
-                        <Row xs={1}>
+                        <Row>
                           {tech.Details && tech.Details.map((item, index) => {
                             return (
-                              <ListGroup key={`tacchDetails${index}`} style={{ gap: '10px', marginTop: '15px' }}>
-                                <a style={{ textDecoration: 'none' }} href={item.link} target='_blank' rel="noreferrer">
-                                  <ListGroup.Item style={{ boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.1)', borderRadius: '8px', border: '1px solid #F9F9F9' }}><span style={{
-                                    fontSize: "16px", fontWeight: '400'
-                                  }}>{item?.link}</span></ListGroup.Item>
-                                </a>
-                              </ListGroup>
+                              <Col lg={12} key={`tacchDetails${index}`}>
+                                <Card style={{ boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.1)', borderRadius: '8px', border: '1px solid #F9F9F9', gap: '10px', marginTop: '15px' }}>
+                                  <a style={{ textDecoration: 'none' }} href={item.link} target='_blank' rel="noreferrer">
+                                    <Card.Body>
+                                      <Card.Text style={{
+                                        fontSize: "16px", fontWeight: '400', color: '#1A1A1A'
+                                      }}>{item?.link}</Card.Text>
+                                    </Card.Body>
+                                  </a>
+                                </Card>
+                              </Col>
                             );
                           })}
                         </Row>
