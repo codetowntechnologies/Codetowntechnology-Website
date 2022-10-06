@@ -16,8 +16,8 @@ const Services = () => {
       <div className='contact-position'>
         <PageHeader
           title='Web and Mobile Software Development Services'
-          subtitle='A successful offshare software application development company since 1997, providing a full range of website and mobile app development, games development, IoT, AR-VR and other IT Services and solutions globally.'
-          bgImage='/images/contact/background.png'
+          subtitle='A successful offshare software application development company since 2020, providing a full range of website and mobile app development, games development, IoT, AR-VR and other IT Services and solutions globally.'
+          bgImage='/images/team/team-banner.png'
           classNames='services-text'
         />
       </div>
@@ -99,7 +99,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/portfolio')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />
@@ -246,7 +246,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/portfolio')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />
@@ -334,7 +334,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/portfolio')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />
@@ -405,7 +405,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/portfolio')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />
@@ -472,7 +472,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/portfolio')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />
@@ -540,7 +540,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/portfolio')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />
@@ -591,7 +591,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/portfolio')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />
@@ -723,7 +723,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/portfolio')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />
@@ -794,7 +794,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/portfolio')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />

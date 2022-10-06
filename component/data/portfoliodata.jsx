@@ -77,7 +77,6 @@ export const PortfolioData = [
         iphone_link: '/detail/service',
         web_link: '/detail/service',
         technology: 'Android',
-        technology_2: 'IOS',
       },
       {
         id: 8,
@@ -92,28 +91,6 @@ export const PortfolioData = [
       },
       {
         id: 9,
-        subheading: 'Social',
-        title: 'Real Friends',
-        image: '/images/portfolio/5.png',
-        android_link: 'https://play.google.com/store/apps/details?id=com.application.realfriend',
-        iphone_link: '/detail/service',
-        web_link: '/detail/service',
-        technology: 'Android',
-      },
-      {
-        id: 10,
-        subheading: 'Maps & Navigation',
-        title: 'Wa Parking',
-        image: '/images/portfolio/6.png',
-        android_link: 'https://www.waparking.com/',
-        iphone_link: 'https://www.waparking.com/',
-        web_link: 'https://www.waparking.com/',
-        technology: 'Android',
-        technology_2: 'IOS',
-        technology_3: 'Web'
-      },
-      {
-        id: 11,
         subheading: 'Food & Drink',
         title: 'Shhef',
         image: '/images/portfolio/8.png',
@@ -185,10 +162,10 @@ export const PortfolioTabs = [
   // },
   {
     id: 2,
-    name: 'Mobile App Project'
+    name: 'Mobile App Projects'
   },
   {
     id: 3,
-    name: 'Web Project'
+    name: 'Web Projects'
   }
 ]
