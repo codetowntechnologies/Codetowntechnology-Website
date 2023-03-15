@@ -41,8 +41,8 @@ export const TeamData = [
             {
                 id: 3,
                 image: '/images/team/avatar.jpg',
-                name: 'Prateek Pareek',
-                profession: 'Technical Project Manager',
+                name: 'Vishal',
+                profession: 'Director Global Sales',
                 link: '/',
             }
         ]
@@ -54,22 +54,22 @@ export const TeamData = [
             {
                 id: 1,
                 image: '/images/team/avatar.jpg',
-                name: 'Rakesh Pamu',
+                name: 'Abhishek Patni',
                 profession: 'Lead Mobile Developer',
                 link: '/',
             },
             {
                 id: 2,
                 image: '/images/team/avatar.jpg',
-                name: 'Vinod Abnani',
-                profession: 'Lead Web Developer',
+                name: 'Sumit Kumar',
+                profession: 'Lead ROR Developer',
                 link: '/',
             },
             {
                 id: 3,
                 image: '/images/team/avatar.jpg',
-                name: 'Kamini Paliwal',
-                profession: 'Lead Backend Developer',
+                name: 'Vikas Sharma',
+                profession: 'Lead ROR Developer',
                 link: '/',
             },
             {
@@ -89,15 +89,15 @@ export const TeamData = [
             {
                 id: 6,
                 image: '/images/team/avatar.jpg',
-                name: 'Bilal Mansuri',
-                profession: 'ReactJs & NextJs Developer',
+                name: 'Hiren Chotaliya',
+                profession: 'React Native developer',
                 link: '/',
             },
             {
                 id: 7,
                 image: '/images/team/avatar.jpg',
-                name: 'Zeeshan Ahmed',
-                profession: 'ReactJs Developer',
+                name: 'HariKrushnn Radadiya',
+                profession: 'React & Next js Developer',
                 link: '/',
             },
             {
