@@ -207,7 +207,12 @@ a {
   color: $color-light  !important;
   border-bottom: 2px solid $color-light  !important;
   margin-right: 20px;
+  color: #fff !important;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(255 255 255) !important;
+}
+
 
 .header-nav-link-active {
   font-style: normal;
@@ -3103,4 +3108,53 @@ li {
     color: $color-secondary;
   }
 
+}
+
+// Hire dedicated developer
+.dedicated_developer_heading{
+  font-size: 40px;
+  font-weight: 700;
+}
+.dedicated_developer_heading_two{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #FF390C;
+}
+.dadicated_developer_subtitle{
+  font-family: "Poppins-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+}
+.dedicated_developer_box_item{
+  background-color: #fff;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+  border-radius: 5px;
+  padding: 12px 11px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  img{
+       width: 50px; 
+  }
+  h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+}
+.dedicated_developer_questions .accordion-flush .accordion-item {
+  /* border-right: 0; */
+  /* border-left: 0; */
+  border-radius: 10px;
+  margin-bottom: 14px;
+  box-shadow: 2px 4px 8px #e1e1e1;
+}
+
+.dedicated_developer_questions .accordion-button {
+  font-size: 13px;
+  font-weight: 600;
 }

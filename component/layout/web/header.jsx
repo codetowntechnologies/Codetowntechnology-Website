@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
-import { Container, Image, Nav, Navbar, Offcanvas } from 'react-bootstrap';
+import { Container, Dropdown, Image, Nav, Navbar, NavDropdown, Offcanvas } from 'react-bootstrap';
 
 const Header = () => {
   const router = useRouter();
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const [isToolsHovered, setIsToolsHovered] = React.useState(false);
   React.useEffect(() => {
     if (typeof window !== 'undefined') {
       window.onscroll = () => {
@@ -17,6 +18,16 @@ const Header = () => {
   const [show, setShow] = React.useState(false);
   const handleClose = () => setShow(false);
   const handleOpen = () => setShow(true);
+
+  // dropdown element start
+  const showDropdown = () => {
+    setIsToolsHovered(true);
+  };
+  const hideDropdown = () => {
+    setIsToolsHovered(false);
+  };
+  // dropdown element end
+
   return (
     <>
       <div>
@@ -54,6 +65,27 @@ const Header = () => {
                   <Link href="/team" passHref>
                     <Nav.Link onClick={handleClose} className={router.pathname == '/team' ? 'header-nav-link-active' : 'header-nav-link'}>Our Team</Nav.Link>
                   </Link>
+                  <NavDropdown 
+                    title="Hire Developer" 
+                    id="basic-nav-dropdown"
+                    className='header-nav-link'
+                    onMouseEnter={() => showDropdown()}
+                    onMouseLeave={() => hideDropdown()}
+                    show={isToolsHovered}
+                    >
+                    <NavDropdown.Item href="/dedicatedDeveloper">
+                     Dedicated Developer
+                    </NavDropdown.Item>
+                    {/* <NavDropdown.Item href="/dedicatedDeveloper">
+                     Dedicated Developer
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/dedicatedDeveloper">
+                     Dedicated Developer
+                    </NavDropdown.Item> */}
+                  </NavDropdown>
+                  
+                  
+
                   <Link href="/github" passHref>
                     <Nav.Link onClick={handleClose} className={router.pathname == '/github' ? 'header-nav-link-active' : 'header-nav-link'}>Github</Nav.Link>
                   </Link>

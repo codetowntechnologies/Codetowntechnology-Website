@@ -650,7 +650,7 @@ const Services = () => {
               </Row>
               <Col>
                 <CustomButton
-                  onClick={() => router.push('/contact')}
+                  onClick={() => router.push('/dedicatedDeveloper')}
                   title='LEARN MORE'
                   className='services-page-btn'
                 />
