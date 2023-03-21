@@ -130,7 +130,7 @@ const DedicatedDeveloper = () => {
                     <Col md={3} lg={3}>
                         <div className='dedicated_developer_box_item'>
                             <img src="/images/hire-developer/icon/ror.png" alt='ROR Developer' />
-                            <h6>ROR Developer</h6>
+                            <h6>ROR Developers</h6>
                         </div>
                     </Col>
                     <Col md={3} lg={3}>

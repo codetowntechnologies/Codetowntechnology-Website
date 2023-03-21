@@ -3158,3 +3158,18 @@ li {
   font-size: 13px;
   font-weight: 600;
 }
+
+// team-accordian for team page
+.team_accordian{
+  margin-top: 80px;
+}
+.team_accordian .accordion-button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ff390c;
+}
+.team_accordian .accordion-button:not(.collapsed) {
+  color: #ff390c;
+  background-color: #ff390c1a;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
