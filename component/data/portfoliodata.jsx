@@ -99,6 +99,28 @@ export const PortfolioData = [
         web_link: 'https://shhef.com',
         technology: 'Android',
         technology_3: 'Web'
+      },
+      {
+        id: 10,
+        subheading: 'Save Me: Food Waste',
+        title: 'Save Me',
+        image: '/images/portfolio/save_me.png',
+        android_link: 'https://play.google.com/store/apps/details?id=app.saveme',
+        iphone_link: '/detail/service',
+        web_link: 'https://apps.apple.com/app/save-me-food-waste/id6444713924',
+        technology: 'Android',
+        technology_3: 'IOS',
+      },
+      {
+        id: 11,
+        subheading: 'Sofra, Delivery Portal',
+        title: 'SOFRA',
+        image: '/images/portfolio/sofra.png',
+        android_link: 'https://play.google.com/store/apps/details?id=app.saveme',
+        iphone_link: '/detail/service',
+        web_link: 'https://apps.apple.com/app/save-me-food-waste/id6444713924',
+        technology: 'Android',
+        technology_3: 'IOS',
       }
     ]
   },
@@ -108,15 +130,13 @@ export const PortfolioData = [
       ,
       {
         id: 1,
-        subheading: 'Maps & Navigation',
-        title: 'Wa Parking',
-        image: '/images/portfolio/6.png',
-        android_link: 'https://www.waparking.com/',
-        iphone_link: 'https://www.waparking.com/',
-        web_link: 'https://www.waparking.com/',
-        technology: 'Android',
-        technology_2: 'IOS',
-        technology_3: 'Web'
+        subheading: 'Health & Fitness',
+        title: 'Doctors Plaza',
+        image: '/images/portfolio/doctors-plaza.png',
+        android_link: '/detail/service',
+        iphone_link: '/detail/service',
+        web_link: 'https://www.doctorsplaza.in/',
+        technology_3: 'Web',
       },
       {
         id: 2,
@@ -131,6 +151,37 @@ export const PortfolioData = [
       },
       {
         id: 3,
+        subheading: 'Toys Store',
+        title: 'Toys Global',
+        image: '/images/portfolio/toyland.png',
+        android_link: '/detail/service',
+        iphone_link: '/detail/service',
+        web_link: 'https://toyland-frontend.vercel.app/',
+        technology_3: 'Web',
+      },
+      {
+        id: 4,
+        subheading: 'Admin panel',
+        title: 'BMB ADMIN',
+        image: '/images/portfolio/bmb.png',
+        android_link: '/detail/service',
+        iphone_link: '/detail/service',
+        web_link: 'https://bmb-admin.vercel.app/',
+        technology_3: 'Web',
+      },
+      {
+        id: 5,
+        subheading: 'B2B furniture shop',
+        title: 'Sourcezee',
+        subtitle: 'A marketplace platform to trade fresh farm products in Aruba.',
+        image: '/images/portfolio/Sourcezee.png',
+        android_link: '/detail/service',
+        iphone_link: '/detail/service',
+        web_link: 'https://dev.sourcezee.com/',
+        technology_3: 'Web'
+      },
+      {
+        id: 5,
         subheading: 'Ecommerce & Services',
         title: 'Kiraya Store',
         subtitle: 'A marketplace platform to trade fresh farm products in Aruba.',
@@ -141,7 +192,7 @@ export const PortfolioData = [
         technology_3: 'Web'
       },
       {
-        id: 4,
+        id: 6,
         subheading: 'Education',
         title: 'School of Motion',
         image: '/images/portfolio/9.png',
@@ -149,10 +200,21 @@ export const PortfolioData = [
         iphone_link: '/detail/service',
         web_link: 'https://www.schoolofmotion.com',
         technology_3: 'Web',
-      }
+      },
+      {
+        id: 7,
+        subheading: 'Maps & Navigation',
+        title: 'Wa Parking',
+        image: '/images/portfolio/6.png',
+        android_link: 'https://www.waparking.com/',
+        iphone_link: 'https://www.waparking.com/',
+        web_link: 'https://www.waparking.com/',
+        technology: 'Android',
+        technology_2: 'IOS',
+        technology_3: 'Web'
+      },
     ]
   }
-
 ];
 
 export const PortfolioTabs = [

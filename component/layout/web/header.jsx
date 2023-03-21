@@ -60,21 +60,21 @@ const Header = () => {
                     <Nav.Link onClick={handleClose} className={router.pathname == '/services' ? 'header-nav-link-active' : 'header-nav-link'}>Services</Nav.Link>
                   </Link>
                   <Link href="portfolio" passHref>
-                    <Nav.Link onClick={handleClose} className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolio</Nav.Link>
+                    <Nav.Link onClick={handleClose} className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolios</Nav.Link>
                   </Link>
                   <Link href="/team" passHref>
                     <Nav.Link onClick={handleClose} className={router.pathname == '/team' ? 'header-nav-link-active' : 'header-nav-link'}>Our Team</Nav.Link>
                   </Link>
                   <NavDropdown 
-                    title="Hire Developer" 
+                    title="Hire Developers" 
                     id="basic-nav-dropdown"
-                    className='header-nav-link'
+                    className={router.pathname == '/dedicatedDeveloper' ? 'header-nav-link-active' : 'header-nav-link'}
                     onMouseEnter={() => showDropdown()}
                     onMouseLeave={() => hideDropdown()}
                     show={isToolsHovered}
                     >
                     <NavDropdown.Item href="/dedicatedDeveloper">
-                     Dedicated Developer
+                     Dedicated Developers
                     </NavDropdown.Item>
                     {/* <NavDropdown.Item href="/dedicatedDeveloper">
                      Dedicated Developer

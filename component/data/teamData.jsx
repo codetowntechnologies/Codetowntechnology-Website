@@ -96,19 +96,26 @@ export const TeamData = [
             {
                 id: 7,
                 image: '/images/team/avatar.jpg',
+                name: 'Varsha Diwakar',
+                profession: 'React Native developer',
+                link: '/',
+            },
+            {
+                id: 8,
+                image: '/images/team/avatar.jpg',
                 name: 'HariKrushnn Radadiya',
                 profession: 'React & Next js Developer',
                 link: '/',
             },
             {
-                id: 8,
+                id: 9,
                 image: '/images/team/avatar.jpg',
                 name: 'Anurag Porwal',
                 profession: 'QA',
                 link: '/',
             },
             {
-                id: 8,
+                id: 10,
                 image: '/images/team/avatar.jpg',
                 name: 'Kajal Jain',
                 profession: 'HR Head',

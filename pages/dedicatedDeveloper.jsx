@@ -87,6 +87,12 @@ const DedicatedDeveloper = () => {
                 <Row>
                     <Col md={3} lg={3}>
                         <div className='dedicated_developer_box_item'>
+                            <img src="/images/hire-developer/icon/React-JS.png" alt='React Native' />
+                            <h6>React Native Developers</h6>
+                        </div>
+                    </Col>
+                    <Col md={3} lg={3}>
+                        <div className='dedicated_developer_box_item'>
                             <img src="/images/hire-developer/icon/Apple.png" alt='Apple' />
                             <h6>iOS Developers</h6>
                         </div>
@@ -148,13 +154,19 @@ const DedicatedDeveloper = () => {
                     <Col md={3} lg={3}>
                         <div className='dedicated_developer_box_item'>
                             <img src="/images/hire-developer/icon/Full-Stack.png" alt='Full-Stack' />
-                            <h6>Full Stack</h6>
+                            <h6>Full Stack Developers</h6>
                         </div>
                     </Col>
                     <Col md={3} lg={3}>
                         <div className='dedicated_developer_box_item'>
                             <img src="/images/hire-developer/icon/ASP-net.png" alt='ASP-net' />
-                            <h6>ASP.NET</h6>
+                            <h6>ASP.NET Developers</h6>
+                        </div>
+                    </Col>
+                    <Col md={3} lg={3}>
+                        <div className='dedicated_developer_box_item'>
+                            <img src="/images/hire-developer/icon/Full-Stack.png" alt='Full-Stack' />
+                            <h6>Mean Stack Developers</h6>
                         </div>
                     </Col>
                     </Row>
@@ -259,6 +271,12 @@ const DedicatedDeveloper = () => {
                         <div className='dedicated_developer_box_item'>
                             <img src="/images/hire-developer/icon/ICO-Platform.png" alt='ICO-Platform' />
                             <h6>ICO Platform</h6>
+                        </div>
+                    </Col>
+                    <Col md={3} lg={3}>
+                        <div className='dedicated_developer_box_item'>
+                            <img src="/images/hire-developer/icon/AWS.png" alt='AWS' />
+                            <h6>AWS</h6>
                         </div>
                     </Col>
                     </Row>
