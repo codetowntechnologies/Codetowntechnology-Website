@@ -34,6 +34,10 @@ a {
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
 
+a {
+  // color: var(--bs-link-color);
+  text-decoration: none !important;
+}
 
 .btn-close {
   box-sizing: content-box;
