@@ -58,20 +58,6 @@ export const TeamData = [
                 profession: 'Lead Mobile Developer',
                 link: '/',
             },
-            // {
-            //     id: 2,
-            //     image: '/images/team/avatar.jpg',
-            //     name: 'Sumit Kumar',
-            //     profession: 'Lead ROR Developer',
-            //     link: '/',
-            // },
-            // {
-            //     id: 3,
-            //     image: '/images/team/avatar.jpg',
-            //     name: 'Vikas Sharma',
-            //     profession: 'Lead ROR Developer',
-            //     link: '/',
-            // },
             {
                 id: 2,
                 image: '/images/team/avatar.jpg',
