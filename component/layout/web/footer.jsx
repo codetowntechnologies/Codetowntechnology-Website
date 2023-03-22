@@ -29,22 +29,22 @@ const Footer = () => {
 
         <Nav className="ml-auto">
           <Link href="/about" passHref>
-            <Nav.Link className={router.pathname == '/about' ? 'footer-nav-link-active' : 'footer-nav-link'}>About</Nav.Link>
+            <Nav.Link href="/about" className={router.pathname == '/about' ? 'footer-nav-link-active' : 'footer-nav-link'}>About</Nav.Link>
           </Link>
           <Link href="/services" passHref>
-            <Nav.Link className={router.pathname == '/services' ? 'footer-nav-link-active' : 'footer-nav-link'}>Services</Nav.Link>
+            <Nav.Link href="/services" className={router.pathname == '/services' ? 'footer-nav-link-active' : 'footer-nav-link'}>Services</Nav.Link>
           </Link>
           <Link href="/portfolio" passHref>
-            <Nav.Link className={router.pathname == '/portfolio' ? 'footer-nav-link-active' : 'footer-nav-link'}>Portfolios</Nav.Link>
+            <Nav.Link href="/portfolio" className={router.pathname == '/portfolio' ? 'footer-nav-link-active' : 'footer-nav-link'}>Portfolios</Nav.Link>
           </Link>
           <Link href="/team" passHref>
-            <Nav.Link className={router.pathname == '/team' ? 'footer-nav-link-active' : 'footer-nav-link'}>Our Team</Nav.Link>
+            <Nav.Link href="/team" className={router.pathname == '/team' ? 'footer-nav-link-active' : 'footer-nav-link'}>Our Team</Nav.Link>
           </Link>
           <Link href="/dedicatedDeveloper" passHref>
-            <Nav.Link className={router.pathname == '/dedicatedDeveloper' ? 'footer-nav-link-active' : 'footer-nav-link'}>Dedicated Developers</Nav.Link>
+            <Nav.Link href="/dedicatedDeveloper" className={router.pathname == '/dedicatedDeveloper' ? 'footer-nav-link-active' : 'footer-nav-link'}>Dedicated Developers</Nav.Link>
           </Link>
           <Link href="/github" passHref>
-            <Nav.Link className={router.pathname == '/github' ? 'footer-nav-link-active' : 'footer-nav-link'}>Github</Nav.Link>
+            <Nav.Link href="/github" className={router.pathname == '/github' ? 'footer-nav-link-active' : 'footer-nav-link'}>Github</Nav.Link>
           </Link>
           {/* <Link href="/technology" passHref>
             <Nav.Link className='footer-nav-link'>Technology</Nav.Link>

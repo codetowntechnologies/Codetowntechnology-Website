@@ -37,16 +37,16 @@ const Header = () => {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Link href="/about" passHref>
-                  <Nav.Link className={router.pathname == '/about' ? 'header-nav-link-active' : 'header-nav-link'}>About</Nav.Link>
+                  <Nav.Link href="/about" className={router.pathname == '/about' ? 'header-nav-link-active' : 'header-nav-link'}>About</Nav.Link>
                 </Link>
                 <Link href="services" passHref>
-                  <Nav.Link className={router.pathname == '/services' ? 'header-nav-link-active' : 'header-nav-link'}>Services</Nav.Link>
+                  <Nav.Link href="/services" className={router.pathname == '/services' ? 'header-nav-link-active' : 'header-nav-link'}>Services</Nav.Link>
                 </Link>
                 <Link href="portfolio" passHref>
-                  <Nav.Link className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolio</Nav.Link>
+                  <Nav.Link href="/portfolio" className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolio</Nav.Link>
                 </Link>
                 <Link href="/contact" passHref>
-                  <Nav.Link className={router.pathname == '/contact' ? 'header-nav-link-contact-1' : router.pathname == '/portfolio' ? 'header-nav-link-contact-1' : router.pathname == '/services' ? 'header-nav-link-contact-1' : 'header-nav-link-contact'}>Contact Us</Nav.Link>
+                  <Nav.Link href="/contact" className={router.pathname == '/contact' ? 'header-nav-link-contact-1' : router.pathname == '/portfolio' ? 'header-nav-link-contact-1' : router.pathname == '/services' ? 'header-nav-link-contact-1' : 'header-nav-link-contact'}>Contact Us</Nav.Link>
                 </Link>
               </Nav>
             </Offcanvas.Body>

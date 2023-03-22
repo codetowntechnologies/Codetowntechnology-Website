@@ -54,27 +54,27 @@ const Header = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Link href="/about" passHref>
-                    <Nav.Link onClick={handleClose} className={router.pathname == '/about' ? 'header-nav-link-active' : 'header-nav-link'}>About</Nav.Link>
+                    <Nav.Link href="/about" onClick={handleClose} className={router.pathname == '/about' ? 'header-nav-link-active' : 'header-nav-link'}>About</Nav.Link>
                   </Link>
                   <Link href="services" passHref>
-                    <Nav.Link onClick={handleClose} className={router.pathname == '/services' ? 'header-nav-link-active' : 'header-nav-link'}>Services</Nav.Link>
+                    <Nav.Link href="/services" onClick={handleClose} className={router.pathname == '/services' ? 'header-nav-link-active' : 'header-nav-link'}>Services</Nav.Link>
                   </Link>
                   <Link href="portfolio" passHref>
-                    <Nav.Link onClick={handleClose} className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolios</Nav.Link>
+                    <Nav.Link href="/portfolio" onClick={handleClose} className={router.pathname == '/portfolio' ? 'header-nav-link-active' : 'header-nav-link'}>Portfolios</Nav.Link>
                   </Link>
                   <Link href="/team" passHref>
-                    <Nav.Link onClick={handleClose} className={router.pathname == '/team' ? 'header-nav-link-active' : 'header-nav-link'}>Our Team</Nav.Link>
+                    <Nav.Link href="/team" onClick={handleClose} className={router.pathname == '/team' ? 'header-nav-link-active' : 'header-nav-link'}>Our Team</Nav.Link>
                   </Link>
-                  <NavDropdown 
-                    title="Hire Developers" 
+                  <NavDropdown
+                    title="Hire Developers"
                     id="basic-nav-dropdown"
                     className={router.pathname == '/dedicatedDeveloper' ? 'header-nav-link-active' : 'header-nav-link'}
                     onMouseEnter={() => showDropdown()}
                     onMouseLeave={() => hideDropdown()}
                     show={isToolsHovered}
-                    >
+                  >
                     <NavDropdown.Item href="/dedicatedDeveloper">
-                     Dedicated Developers
+                      Dedicated Developers
                     </NavDropdown.Item>
                     {/* <NavDropdown.Item href="/dedicatedDeveloper">
                      Dedicated Developer
@@ -83,14 +83,14 @@ const Header = () => {
                      Dedicated Developer
                     </NavDropdown.Item> */}
                   </NavDropdown>
-                  
-                  
+
+
 
                   <Link href="/github" passHref>
-                    <Nav.Link onClick={handleClose} className={router.pathname == '/github' ? 'header-nav-link-active' : 'header-nav-link'}>Github</Nav.Link>
+                    <Nav.Link href="/github" onClick={handleClose} className={router.pathname == '/github' ? 'header-nav-link-active' : 'header-nav-link'}>Github</Nav.Link>
                   </Link>
                   <Link href="/contact" passHref>
-                    <Nav.Link onClick={handleClose} className={router.pathname == '/contact' ? 'header-nav-link-contact-1' : router.pathname == '/portfolio' ? 'header-nav-link-contact-1' : router.pathname == '/services' ? 'header-nav-link-contact-1' : 'header-nav-link-contact'}>Contact Us</Nav.Link>
+                    <Nav.Link href="/contact" onClick={handleClose} className={router.pathname == '/contact' ? 'header-nav-link-contact-1' : router.pathname == '/portfolio' ? 'header-nav-link-contact-1' : router.pathname == '/services' ? 'header-nav-link-contact-1' : 'header-nav-link-contact'}>Contact Us</Nav.Link>
                   </Link>
                 </Nav>
               </Offcanvas.Body>
