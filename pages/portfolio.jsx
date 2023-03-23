@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import { Card, Col, Container, Image, Nav, Row, Stack, Tab } from 'react-bootstrap';
+import { Button, Card, Col, Container, Image, Modal, Nav, Row, Stack, Tab } from 'react-bootstrap';
 import withWebLayout from '../component/layout/web/withWebLayout';
 import { PageHeader } from '../component/modules/header/pageHeader';
 import { PortfolioData, PortfolioTabs } from '../component/data/portfoliodata';
@@ -9,6 +9,18 @@ import ModelBox from '../component/modules/modal';
 const PortFolio = () => {
   const [key, setKey] = React.useState(2);
   const [modalShow, setModalShow] = React.useState(false);
+  const [show, setShow] = React.useState(false);
+
+  const handleClose = () => {
+    setShow(false);
+  }
+  const handleShow = (e) => {
+  if(e === "invictus"){
+    setShow(true);
+  }else{
+    setShow(false);
+  }
+  }
 
   const handleSelect = (eventKey) => {
     setKey(eventKey);
@@ -71,25 +83,42 @@ const PortFolio = () => {
                                       </Card.Text>
                                       <Card.Title className='portfolio-card-title'>{item.title}</Card.Title>
                                       <Stack direction='horizontal' gap={3}>
-                                        {item.technology && <div>
-                                          <a style={{ textDecoration: 'none' }} href={item.android_link} target='_blank' rel='noopener noreferrer'>
-                                            <Card.Text className='portfolio-card-technology'>
+                                        {item.technology && <div onClick={() => handleShow(item.android_link)}>
+                                          {item.android_link === "invictus" ? 
+                                          <Card.Text className='portfolio-card-technology'>
                                               {item.technology}
-                                            </Card.Text></a>
+                                            </Card.Text> : 
+                                            <a style={{ textDecoration: 'none'}} href={item.android_link} target='_blank' rel='noopener noreferrer'>
+                                              <Card.Text className='portfolio-card-technology'>
+                                                {item.technology}
+                                              </Card.Text>
+                                            </a>
+                                            }
                                         </div>}
-                                        {item.technology_2 && <div>
-                                          <a style={{ textDecoration: 'none' }} href={item.iphone_link} target='_blank' rel='noopener noreferrer'>
-                                            <Card.Text className='portfolio-card-technology_2'>
-                                              {item.technology_2}
-                                            </Card.Text>
-                                          </a>
+                                          {item.technology_2 && <div onClick={() => handleShow(item.iphone_link)}>
+                                            {item.iphone_link === "invictus" ?
+                                                <Card.Text className='portfolio-card-technology_2'>
+                                                  {item.technology_2}
+                                                </Card.Text>:
+                                                <a style={{ textDecoration: 'none' }} href={item.iphone_link} target='_blank' rel='noopener noreferrer'>
+                                                  <Card.Text className='portfolio-card-technology_2'>
+                                                    {item.technology_2}
+                                                  </Card.Text>
+                                              </a>
+                                            }
                                         </div>}
-                                        {item.technology_3 && <div>
-                                          <a style={{ textDecoration: 'none' }} href={item.web_link} target='_blank' rel='noopener noreferrer'>
+                                        
+                                        {item.technology_3 && <div onClick={() => handleShow(item.web_link)}>
+                                          {item.web_link === "invictus" ?
                                             <Card.Text className='portfolio-card-technology_2'>
                                               {item.technology_3}
-                                            </Card.Text>
-                                          </a>
+                                            </Card.Text>:
+                                            <a style={{ textDecoration: 'none' }} href={item.web_link} target='_blank' rel='noopener noreferrer'>
+                                              <Card.Text className='portfolio-card-technology_2'>
+                                                {item.technology_3}
+                                              </Card.Text>
+                                            </a>
+                                            }
                                         </div>}
                                       </Stack>
                                     </Card.Body>
@@ -109,6 +138,23 @@ const PortFolio = () => {
           </Row>
         </Tab.Container>
       </Container>
+      {/* This is modal */}
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Scan the QR code</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div style={{textAlign: "center"}}>
+           <img src='/images/portfolio/qr-code.png' alt='QR-code' />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
       <ModelBox
         show={modalShow}
         onHide={() => setModalShow(false)}

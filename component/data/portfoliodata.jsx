@@ -121,7 +121,40 @@ export const PortfolioData = [
         web_link: 'https://apps.apple.com/app/save-me-food-waste/id6444713924',
         technology: 'Android',
         technology_3: 'IOS',
-      }
+      },
+      {
+        id: 12,
+        subheading: 'Invictus LLP, This is expo project.',
+        title: 'Invictus',
+        image: '/images/portfolio/Invictus.png',
+        android_link: 'invictus',
+        iphone_link: 'invictus',
+        web_link: 'invictus',
+        technology: 'Android',
+        technology_3: 'IOS',
+      },
+      {
+        id: 13,
+        subheading: 'iweft',
+        title: 'IWEFT',
+        image: '/images/portfolio/iweft.png',
+        android_link: 'https://play.google.com/store/apps/details?id=app.saveme',
+        iphone_link: '/detail/service',
+        web_link: 'https://apps.apple.com/app/save-me-food-waste/id6444713924',
+        technology: 'Android',
+        technology_3: 'IOS',
+      },
+      {
+        id: 14,
+        subheading: 'clickfood',
+        title: 'clickfood',
+        image: '/images/portfolio/clickfood.png',
+        android_link: 'https://play.google.com/store/apps/details?id=app.saveme',
+        iphone_link: '/detail/service',
+        web_link: 'https://apps.apple.com/app/save-me-food-waste/id6444713924',
+        technology: 'Android',
+        technology_3: 'IOS',
+      },
     ]
   },
   {
@@ -181,7 +214,18 @@ export const PortfolioData = [
         technology_3: 'Web'
       },
       {
-        id: 5,
+        id: 6,
+        subheading: 'Bunawat Fashion Store',
+        title: 'Bunawat',
+        subtitle: 'A marketplace platform to trade fresh farm products in Aruba.',
+        image: '/images/portfolio/Bunawat.png',
+        android_link: '/detail/service',
+        iphone_link: '/detail/service',
+        web_link: 'https://bunawat-website.vercel.app/',
+        technology_3: 'Web'
+      },
+      {
+        id: 7,
         subheading: 'Ecommerce & Services',
         title: 'Kiraya Store',
         subtitle: 'A marketplace platform to trade fresh farm products in Aruba.',
@@ -192,7 +236,7 @@ export const PortfolioData = [
         technology_3: 'Web'
       },
       {
-        id: 6,
+        id: 8,
         subheading: 'Education',
         title: 'School of Motion',
         image: '/images/portfolio/9.png',
@@ -202,7 +246,7 @@ export const PortfolioData = [
         technology_3: 'Web',
       },
       {
-        id: 7,
+        id: 9,
         subheading: 'Maps & Navigation',
         title: 'Wa Parking',
         image: '/images/portfolio/6.png',
