@@ -124,8 +124,8 @@ export const PortfolioData = [
       },
       {
         id: 12,
-        subheading: 'Invictus LLP, This is expo project.',
-        title: 'Invictus',
+        subheading: 'InviAi Analytics, This is expo project.',
+        title: 'InviAi Analytics',
         image: '/images/portfolio/Invictus.png',
         android_link: 'invictus',
         iphone_link: 'invictus',
